@@ -21,7 +21,7 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-require_once(dirname(__FILE__) . './Utilities/class-ezp-cs-utility.php');
+require_once(dirname(__FILE__) . '/Utilities/class-ezp-cs-utility.php');
 
 require_once(EZP_CS_Utility::$PLUGIN_DIRECTORY . '/../../../wp-admin/includes/upgrade.php');
 
@@ -31,8 +31,8 @@ require_once("Entities/class-ezp-cs-global-entity.php");
 require_once('class-ezp-cs-plugin-base.php');
 require_once('class-ezp-cs-constants.php');
 
-require_once(dirname(__FILE__) . './Utilities/class-ezp-cs-render-utility.php');
-require_once(dirname(__FILE__) . './Utilities/class-ezp-cs-test-utility.php');
+require_once(dirname(__FILE__) . '/Utilities/class-ezp-cs-render-utility.php');
+require_once(dirname(__FILE__) . '/Utilities/class-ezp-cs-test-utility.php');
 
 if (!class_exists('EZP_CS')) {
 

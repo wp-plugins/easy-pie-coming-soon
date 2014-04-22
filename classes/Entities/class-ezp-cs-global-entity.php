@@ -25,15 +25,15 @@
 require_once(dirname(__FILE__) . '/../Utilities/class-ezp-cs-query-utility.php');
 
 require_once('class-ezp-cs-standard-entity-base.php');
-require_once(dirname(__FILE__) . './crm/class-ezp-cs-subscriber-entity.php');
-require_once(dirname(__FILE__) . './crm/class-ezp-contact-entity.php');
-require_once(dirname(__FILE__) . './crm/class-ezp-email-entity.php');
+require_once(dirname(__FILE__) . '/crm/class-ezp-cs-subscriber-entity.php');
+require_once(dirname(__FILE__) . '/crm/class-ezp-contact-entity.php');
+require_once(dirname(__FILE__) . '/crm/class-ezp-email-entity.php');
 
 require_once('class-ezp-cs-json-entity-base.php');
-require_once(dirname(__FILE__) . './admin/class-ezp-cs-display-entity.php');
-require_once(dirname(__FILE__) . './admin/class-ezp-cs-content-entity.php');
-require_once(dirname(__FILE__) . './admin/class-ezp-cs-config-entity.php');
-require_once(dirname(__FILE__) . './admin/class-ezp-cs-set-entity.php');
+require_once(dirname(__FILE__) . '/admin/class-ezp-cs-display-entity.php');
+require_once(dirname(__FILE__) . '/admin/class-ezp-cs-content-entity.php');
+require_once(dirname(__FILE__) . '/admin/class-ezp-cs-config-entity.php');
+require_once(dirname(__FILE__) . '/admin/class-ezp-cs-set-entity.php');
 
 if (!class_exists('EZP_CS_Global_Entity')) {
 

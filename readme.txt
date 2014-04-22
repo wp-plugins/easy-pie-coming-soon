@@ -74,10 +74,16 @@ Then, please [let me know](mailto:bob@easypiewp.com) what's going on, with as mu
 
 == Changelog ==
 
+= 0.5.1 =
+* Bug fix: require_once fixed for some Linux installs (thanks Ajith Nair)
+
 = 0.5.0 =
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.5.1 =
+* Bug fix: require_once fixed for some Linux installs (thanks Ajith Nair)
 
 = 0.5.0 =
 * Initial release

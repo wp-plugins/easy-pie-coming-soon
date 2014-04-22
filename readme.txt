@@ -4,7 +4,7 @@ Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, newsletter, email, facebook, twitter, googleplus
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 0.5.0
+Stable tag: 0.5.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 

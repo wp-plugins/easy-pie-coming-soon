@@ -44,7 +44,7 @@
 <html>
     <head>
         <!-- Title here -->
-        <title>{{title}}</title>
+        <title><?php echo $content->title; ?></title>
         
         <?php
         

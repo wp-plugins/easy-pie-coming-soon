@@ -36,7 +36,7 @@ $error_string = "";
 if (isset($_POST['action']) && $_POST['action'] == 'save') {
 
     check_admin_referer('easy-pie-coming-soon-save-content');
-    
+
     // Artificially set the bools since they aren't part of the postback
     $error_string = $content->set_post_variables($_POST);
 
@@ -76,6 +76,24 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>
         </table>
     </div></div>
+
+<div class="postbox" >
+    <div class="inside" >
+        <h3 ><?php EZP_CS_Utility::_e("Title") ?></h3>
+        <table class="form-table"> 
+            <tr>
+                <th scope="row">
+                    <?php echo EZP_CS_Utility::_e("Title") ?>
+                </th>
+                <td>
+                    <div class="compound-setting">                            
+                        <input class="long-input" name="title" type="text" value="<?php EZP_CS_Utility::_he($content->title); ?>" />
+                    </div>
+                </td>
+            </tr>   
+        </table>
+    </div>
+</div>
 
 <div class="postbox" >
     <div class="inside" >

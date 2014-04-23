@@ -43,6 +43,7 @@ if (!class_exists('EZP_CS_Content_Entity')) {
         public $email_button_text;
         public $thank_you_headline;
         public $thank_you_description;
+        public $title;
 
         function __construct() {
 
@@ -58,6 +59,7 @@ if (!class_exists('EZP_CS_Content_Entity')) {
             $this->thank_you_headline = EZP_CS_Utility::__("Thank you!");
             $this->thank_you_description = EZP_CS_Utility::__("You'll hear from us when we launch.");
 
+            $this->title = EZP_CS_Utility::__("Coming soon");
             parent::__construct();
         }
 

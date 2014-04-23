@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Coming Soon Plugin\n"
-"POT-Creation-Date: 2014-04-19 11:39-0700\n"
-"PO-Revision-Date: 2014-04-19 11:39-0700\n"
+"POT-Creation-Date: 2014-04-23 04:59-0700\n"
+"PO-Revision-Date: 2014-04-23 04:59-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -15,39 +15,40 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:49
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:50
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:62
 msgid "Coming soon"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:50
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:51
 msgid "Our exciting new website is coming soon! Check back later."
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:51
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:52
 msgid "We won't spam you or sell your email address. Pinky swear."
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:52
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:53
 msgid "(C)2014 My Company LLC"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:54
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:55
 msgid "Enter email"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:55
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:56
 msgid "Enter name"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:56
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:57
 msgid "Subscribe"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:58
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:59
 msgid "Thank you!"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:59
+#: ../classes/Entities/admin/class-ezp-cs-content-entity.php:60
 msgid "You'll hear from us when we launch."
 msgstr ""
 
@@ -171,12 +172,12 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: ../mini-themes/base-responsive/index.php:165
+#: ../mini-themes/base-responsive/index.php:173
 #: ../pages/page-options-subscribers.php:133
 msgid "Name"
 msgstr ""
 
-#: ../mini-themes/base-responsive/index.php:170
+#: ../mini-themes/base-responsive/index.php:178
 #: ../pages/page-options-subscribers.php:134
 msgid "Email"
 msgstr ""
@@ -215,56 +216,61 @@ msgid "Upload"
 msgstr ""
 
 #: ../pages/page-options-content-tab.php:82
+#: ../pages/page-options-content-tab.php:86
+msgid "Title"
+msgstr ""
+
+#: ../pages/page-options-content-tab.php:100
 msgid "Main Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:86
-#: ../pages/page-options-content-tab.php:173
+#: ../pages/page-options-content-tab.php:104
+#: ../pages/page-options-content-tab.php:191
 msgid "Headline"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:96
+#: ../pages/page-options-content-tab.php:114
 msgid "Description"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:106
+#: ../pages/page-options-content-tab.php:124
 msgid "Disclaimer"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:116
+#: ../pages/page-options-content-tab.php:134
 msgid "Footer"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:129
+#: ../pages/page-options-content-tab.php:147
 msgid "Email Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:134
+#: ../pages/page-options-content-tab.php:152
 msgid "Email Placeholder"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:144
+#: ../pages/page-options-content-tab.php:162
 msgid "Name Placeholder"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:154
+#: ../pages/page-options-content-tab.php:172
 msgid "Button"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:163
+#: ../pages/page-options-content-tab.php:181
 msgid "Section relevant only if email collection is enabled in settings"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:169
+#: ../pages/page-options-content-tab.php:187
 msgid "Thank You Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:184
+#: ../pages/page-options-content-tab.php:202
 #: ../pages/page-options-display-tab.php:255
 msgid "Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:193
+#: ../pages/page-options-content-tab.php:211
 msgid "Section relevant only if email collection is enabled on the display tab"
 msgstr ""
 

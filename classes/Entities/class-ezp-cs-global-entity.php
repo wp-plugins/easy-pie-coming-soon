@@ -21,7 +21,7 @@
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-
+ 
 require_once(dirname(__FILE__) . '/../Utilities/class-ezp-cs-query-utility.php');
 
 require_once('class-ezp-cs-standard-entity-base.php');

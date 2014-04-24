@@ -262,7 +262,7 @@ if (!class_exists('EZP_CS')) {
 
             $display_notice = true;
 
-            if (isset($_REQUEST['page']) && ($_REQUEST['page'] == EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG)) {
+            if (isset($_REQUEST['page']) && (strpos($_REQUEST['page'], EZP_CS_Constants::PLUGIN_SLUG) === 0)) {
 
                 $display_notice = false;
             }
@@ -270,7 +270,7 @@ if (!class_exists('EZP_CS')) {
             if ($display_notice) {
 
                 //echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . $this->__("Coming Soon is On") . "</a></div>";                                
-                EZP_CS_Utility::display_admin_notice();
+                EZP_CS_Utility::display_admin_notice(true);
             }
         }
 
@@ -281,8 +281,9 @@ if (!class_exists('EZP_CS')) {
 
             $in_preview = isset($_REQUEST['ezp_cs_preview']) && ($_REQUEST['ezp_cs_preview'] == 'true');
 
+            
             // RSR TODO: Need to put an enabled box somewhere
-            // 
+            //             
             // For now 
             if (!is_user_logged_in() || $in_preview) {
 

@@ -69,9 +69,7 @@
             <?php wp_nonce_field('easy-pie-coming-soon-save-settings'); ?>
             <input type="hidden" name="action" value="save"/>            
             <?php
-            if ($config->coming_soon_mode_on) {
-                EZP_CS_Utility::display_admin_notice();
-            }
+            EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
 
             if ($error_string != "") :
                 ?>

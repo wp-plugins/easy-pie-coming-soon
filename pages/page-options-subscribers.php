@@ -20,6 +20,11 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 ?>
+<?php
+$global = EZP_CS_Global_Entity::get_instance();
+
+$config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+?>
 
 <script type="text/javascript" src='<?php echo EZP_CS_Utility::$PLUGIN_URL . "/js/page-options-subscribers.js?" . EZP_CS_Constants::PLUGIN_VERSION; ?>'></script>
 
@@ -79,6 +84,11 @@
 
     <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
     <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Subscribers') ?></h2>
+
+    <?php
+        EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);    
+    ?>
+    
     <div id="easypie-cs-options" class="inside">
 
         <?php
@@ -161,7 +171,7 @@
                 <div id="easy-pie-cs-subscriber-controls" style="display: <?php echo $controls_display; ?>">
                     <button id="btn-prev" <?php echo $prev_disabled; ?> name="submit" type="submit" value="previous" onclick="window.location = '<?php echo $prev_url; ?>';
                             return false;"><span style='float:left; margin-top:1px' class="ui-icon ui-icon-triangle-1-w"></span><?php EZP_CS_Utility::_e("Prev"); ?></button>
-                    <span ><?php echo EZP_CS_Utility::__('Page') . ' ' . ($current_page_idx + 1) . ' ' . EZP_CS_Utility::__('of') . ' '. $num_pages; ?></span>
+                    <span ><?php echo EZP_CS_Utility::__('Page') . ' ' . ($current_page_idx + 1) . ' ' . EZP_CS_Utility::__('of') . ' ' . $num_pages; ?></span>
                     <button id="btn-next" <?php echo $next_disabled; ?> name="submit" type="submit" value="next" onclick="window.location = '<?php echo $next_url; ?>';
                             return false;"><?php EZP_CS_Utility::_e("Next"); ?><span style='float:right; margin-top:1px' class="ui-icon ui-icon-triangle-1-e"></span></button>
                     <button id="btn-export" style='float:right' type="button" onclick="location.href = ajaxurl + '?action=EZP_CS_export_all_subscribers&_wpnonce=<?php echo $_wpnonce; ?>';

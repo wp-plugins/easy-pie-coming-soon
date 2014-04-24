@@ -31,6 +31,8 @@ $set = EZP_CS_Set_Entity::get_by_id($set_index);
 
 $content = EZP_CS_Content_Entity::get_by_id($set->content_index);
 
+$config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+
 $error_string = "";
 
 if (isset($_POST['action']) && $_POST['action'] == 'save') {
@@ -50,7 +52,11 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 <?php wp_nonce_field('easy-pie-coming-soon-save-content'); ?>
 <input type="hidden" name="action" value="save"/>
 
-<?php if ($error_string != "") : ?>
+<?php
+EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
+
+if ($error_string != "") :
+    ?>
     <div id="message" class="error below-h2"><p><?php echo EZP_CS_Utility::__('Errors present:') . "<br/> $error_string" ?></p></div>
 <?php endif; ?>
 

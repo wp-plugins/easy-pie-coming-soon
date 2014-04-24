@@ -106,10 +106,17 @@ if (!class_exists('EZP_CS_Utility')) {
             return sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));            
         }
       
-        public static function display_admin_notice()
-        {
-            echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is On") . "</a></div>";                                
-        }
+        public static function display_admin_notice($coming_soon_on)
+        {                        
+            if($coming_soon_on) {
+                
+                echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is On") . "</a></div>";                                                                
+                                
+            } else {
+                
+                echo "<div style='text-decoration:underline' class='updated'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is Off") . "</a></div>";                                    
+            }
+        }           
         
         /*-- Option Field Help Methods --*/       
         

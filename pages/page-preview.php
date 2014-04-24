@@ -26,8 +26,12 @@ $__dir__ = dirname(__FILE__);
 $page_url = get_site_url() . '?ezp_cs_preview=true'
 
 //header( "Location: $page_url" ) ;
-
 ?>
 <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Preview') ?></h2>
+<?php
+$global = EZP_CS_Global_Entity::get_instance();
+
+$config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
+?>
 <iframe style="margin-top:20px; margin-left: 15px; width:80%; height: 600px" src="<?php echo $page_url; ?>"/>
-    

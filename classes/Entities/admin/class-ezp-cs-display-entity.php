@@ -38,8 +38,8 @@ if (!class_exists('EZP_CS_Display_Entity')) {
         public $background_color = "#00FF00";
         public $background_tiling_enabled = false;
                               
-        public $logo_width = "80px";
-        public $logo_height = "80px";
+        public $logo_width = "";
+        public $logo_height = "";
         
         public $content_box_opacity = 0.4;
         public $content_box_color = "#000000";
@@ -84,8 +84,8 @@ if (!class_exists('EZP_CS_Display_Entity')) {
             $this->verifiers['text_footer_font_size'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Footer font must end in a unit (px, em, etc...)"));
             $this->verifiers['email_button_font_size'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Email button font must end in a unit (px, em, etc...)"));
             
-            $this->verifiers['logo_width'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Logo width must end in px or %"));
-            $this->verifiers['logo_height'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Logo height font must end in px or %"));
+//            $this->verifiers['logo_width'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Logo width must end in px or %"));
+//            $this->verifiers['logo_height'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Logo height font must end in px or %"));
             $this->verifiers['email_button_width'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Email button height font must end in px or %"));
             $this->verifiers['email_button_height'] = new EZP_CS_Regex_Verifier($font_size_regex, EZP_CS_Utility::__("Email button width must end in px or %"));
             

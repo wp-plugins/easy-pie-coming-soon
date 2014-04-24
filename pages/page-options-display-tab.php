@@ -55,15 +55,17 @@ $set = EZP_CS_Set_Entity::get_by_id($set_index);
 
 $display = EZP_CS_Display_Entity::get_by_id($set->display_index);
 
+$config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+
 $error_string = "";
 
 
 if (isset($_POST['action']) && $_POST['action'] == 'save') {
-       
-    check_admin_referer('easy-pie-coming-soon-save-display');        
-    
+
+    check_admin_referer('easy-pie-coming-soon-save-display');
+
     EZP_CS_Utility::debug('past admin check');
-    
+
     // Artificially set the bools since they aren't part of the postback
     $display->background_tiling_enabled = "false";
 
@@ -78,8 +80,12 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 
 <?php wp_nonce_field('easy-pie-coming-soon-save-display'); ?>
 <input type="hidden" name="action" value="save"/>
+<?php
 
-<?php if ($error_string != "") : ?>
+EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
+
+if ($error_string != "") :
+    ?>
     <div id="message" class="error below-h2"><p><?php echo EZP_CS_Utility::__('Errors present:') . "<br/> $error_string" ?></p></div>
 <?php endif; ?>
 
@@ -102,7 +108,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Color") ?>
+<?php echo EZP_CS_Utility::_e("Color") ?>
                 </th>
                 <td>
                     <div class="compound-setting">  
@@ -112,7 +118,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Image") ?>
+<?php echo EZP_CS_Utility::_e("Image") ?>
                 </th>                
                 <td>   
                     <div>
@@ -170,7 +176,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>            
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Tile") ?>
+<?php echo EZP_CS_Utility::_e("Tile") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                                            
@@ -193,7 +199,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
         <table class="form-table">    
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Width") ?>
+<?php echo EZP_CS_Utility::_e("Width") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                            
@@ -204,7 +210,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>   
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Height") ?>
+<?php echo EZP_CS_Utility::_e("Height") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                            
@@ -224,7 +230,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
         <table class="form-table">
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Opacity") ?>
+<?php echo EZP_CS_Utility::_e("Opacity") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                                                    
@@ -237,7 +243,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>    
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Color") ?>
+<?php echo EZP_CS_Utility::_e("Color") ?>
                 </th>
                 <td>
                     <div class="compound-setting">     
@@ -255,17 +261,17 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
         <h3><?php EZP_CS_Utility::_e("Text") ?></h3>
         <table class="form-table">
             <tr>        
-                <?php EZP_CS_Display_Entity::display_font_field_row('Headline', 'text_headline', $display) ?>
+<?php EZP_CS_Display_Entity::display_font_field_row('Headline', 'text_headline', $display) ?>
             </tr>
             <tr>
-                <?php EZP_CS_Display_Entity::display_font_field_row('Description', 'text_description', $display) ?>
+<?php EZP_CS_Display_Entity::display_font_field_row('Description', 'text_description', $display) ?>
             </tr>
 
             <tr>
-                <?php EZP_CS_Display_Entity::display_font_field_row('Disclaimer', 'text_disclaimer', $display) ?>
+<?php EZP_CS_Display_Entity::display_font_field_row('Disclaimer', 'text_disclaimer', $display) ?>
             </tr>
             <tr>
-                <?php EZP_CS_Display_Entity::display_font_field_row('Footer', 'text_footer', $display) ?>
+<?php EZP_CS_Display_Entity::display_font_field_row('Footer', 'text_footer', $display) ?>
             </tr>          
         </table>
         <div><span class="description"><?php echo '*' . EZP_CS_Utility::__('Specify px or em for sizes'); ?></span></div>
@@ -280,7 +286,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Width") ?>
+<?php echo EZP_CS_Utility::_e("Width") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                            
@@ -291,7 +297,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
             </tr>   
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Height") ?>
+<?php echo EZP_CS_Utility::_e("Height") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                            
@@ -301,11 +307,11 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
                 </td>
             </tr>  
             <tr>
-                <?php echo EZP_CS_Display_Entity::display_font_field_row("Font", 'email_button', $display); ?>
+<?php echo EZP_CS_Display_Entity::display_font_field_row("Font", 'email_button', $display); ?>
             </tr>
             <tr>
                 <th scope="row">
-                    <?php echo EZP_CS_Utility::_e("Color") ?>
+<?php echo EZP_CS_Utility::_e("Color") ?>
                 </th>
                 <td>
                     <div class="compound-setting">                            
@@ -321,16 +327,16 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 <div class="postbox" >
     <div class="inside" >
         <h3 style="float:left;" ><span style="font-weight:bold"><?php EZP_CS_Utility::_e('Advanced'); ?><span></h3>
-            <table class="form-table">
-                <tr valign="top">
-                    <th scope="row"><?php EZP_CS_Utility::_e("Custom CSS") ?></th><td>
-                        <div>
-                            <textarea cols="67" rows="9" id="easy-pie-cs-field-junk" name="css"><?php echo $display->css; ?></textarea>
-                        </div>             
-                    </td>
-                </tr>
-            </table>
-            
+                    <table class="form-table">
+                        <tr valign="top">
+                            <th scope="row"><?php EZP_CS_Utility::_e("Custom CSS") ?></th><td>
+                                <div>
+                                    <textarea cols="67" rows="9" id="easy-pie-cs-field-junk" name="css"><?php echo $display->css; ?></textarea>
+                                </div>             
+                            </td>
+                        </tr>
+                    </table>
+
                     <div style="margin-top:4px;"><a target="_blank" href="http://easypiewp.com/coming-soon-plugin-css-tips"><span class="description"><?php EZP_CS_Utility::_e('CSS Customization tips'); ?></span></a></div>
-    </div>
-</div>
+                    </div>
+                    </div>

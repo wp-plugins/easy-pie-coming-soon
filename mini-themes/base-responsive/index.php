@@ -111,6 +111,21 @@
             
             $background_image_url = $display->builtin_background_image == "" ? $display->background_image_url : EZP_CS_Utility::$PLUGIN_URL . "/images/backgrounds/" . $display->builtin_background_image;
             
+            if(trim($display->logo_width) == "") {
+                
+                $logo_width_adjustment = "";                        
+            } else {
+                
+                $logo_width_adjustment = "width: $display->logo_width;";
+            }
+            
+            if(trim($display->logo_height) == "") {
+                
+                $logo_height_adjustment = "";                        
+            } else {
+                
+                $logo_height_adjustment = "height: $display->logo_height;";
+            }
             
             echo "
             
@@ -121,7 +136,7 @@
             #disclaimer { {$display->get_font_styling('text_disclaimer')}  }
             #footer { {$display->get_font_styling('text_footer')}  }
                         
-            #logo { display:$logo_display; height: $display->logo_height; width: $display->logo_width;  }
+            #logo { display:$logo_display; $logo_height_adjustment; $logo_width_adjustment;  }
             #email-submit-button { margin-left:3px; {$display->get_font_styling('email_button')}; background-color: $display->email_button_color; height: $display->email_button_height; width: $display->email_button_width; }
             
             #email-collection-box { display:$email_display; }
@@ -151,8 +166,7 @@
             <!-- Subscribe Starts -->
             <div id="content-area" class="text-center">
 
-                <!-- Settings: {{logo-url}}, {{logo-height}}, {{logo-width}}-->
-                <img id="logo" style="max-height:200px;max-width:200px" src="<?php echo $content->logo_url ?>"/> 
+                <img id="logo" src="<?php echo $content->logo_url ?>"/> 
 
 
                 <div id="initial-section">

@@ -1,32 +1,37 @@
 === Easy Pie Coming Soon ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
-Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, newsletter, email, facebook, twitter, googleplus
+Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, mailchimp, aweber
 Requires at least: 3.5
 Tested up to: 3.9
-Stable tag: 0.5.0
+Stable tag: 0.5.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily let website visitors know that your website will be coming soon - and collect emails while it's down!
+Let visitors know that your website is coming soon and collect emails at the same time!
 
 == Description ==
-Need to let your visitors know your site is being worked on while you gather email addresses? The Easy Pie Coming Soon plugin makes it easy. 
+Let your visitors know your site is coming soon while you gather valuable contact information on prospects easily.
 
 ### Basic Features
-* **Announce your site is 'coming soon'** Inform visitors that your site is coming soon.
-* **Collect Emails** Gather name and emails from site visitors!
-* **Social Support** Show icons and links to Facebook, Twitter, and Google+.
-* **Fully Responsive** Looks great on everything from cell phones to tablets to desktops.
-* **No HTML or CSS required.** Don't know HTML or CSS? No problem. The plugin easly lets non-techies make a great looking coming soon page.
-* **Built in backgrounds.** Includes several nice looking backgrounds.
-* **Use your own background.** You don't like the included backgrounds? No problem - use your own!
-* **Add your own logo.** Easily add your own logo using the WordPress Media Library.
-* **Preview.** Preview your Coming Soon page before making it live!
+* Professional looking
+* Highly customizable
+* Collect Emails
+* Fully Responsive
+* No HTML required
+* CSS customizable but not required
+* Use built in backgrounds or your own
+* Add your own logo
+* Preview from Admin panel
+* Subscriber list shows name and emails of visitors
+* Easily translatable
+* Facebook Support 
+* Google+ Support
+* Twitter Support
+
 
 ### Advanced Features
-* **Export Email Addresses to CSV** Need to get the emails into a site like MailChimp, AWeber or some other external system? No problem - simply use CSV export option!
-* **Custom CSS.** Easily add CSS from the Admin page to customize the look and feel.
+* Easily export email addresses to CSV for compatibility with MailChimp, AWeber and other major email providers.
 
 == Installation ==
 
@@ -42,10 +47,7 @@ Need to let your visitors know your site is being worked on while you gather ema
 
 == Frequently Asked Questions ==
 
-= Why is my site is still viewable even though I've turned on Coming Soon? =
-Coming Soon is only shown to visitors who are not logged in. To verify, use a different browser type than the one you're logged in with to see what Visitors see when they visit (i.e. if you're logged in with Chrome, view the site in Firefox or Internet Explorer or vice versa). 
-
-Alternatively, you view your site using the private mode of the same browser.
+The Frequently Asked Questions are found on the [Easy Pie WP Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
 
 = What happens if a search engine hits my site while it's in Coming Soon? =
 

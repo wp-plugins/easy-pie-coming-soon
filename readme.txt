@@ -1,7 +1,7 @@
 === Easy Pie Coming Soon ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
-Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, mailchimp, aweber
+Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5
 Tested up to: 3.9
 Stable tag: 0.5.1
@@ -16,7 +16,7 @@ Let your visitors know your site is coming soon while you gather valuable contac
 ### Basic Features
 * Professional looking
 * Highly customizable
-* Collect Emails
+* Collects Names and Emails
 * Fully Responsive
 * No HTML required
 * CSS customizable but not required
@@ -31,7 +31,7 @@ Let your visitors know your site is coming soon while you gather valuable contac
 
 
 ### Advanced Features
-* Easily export email addresses to CSV for compatibility with MailChimp, AWeber and other major email providers.
+* Easily export email addresses to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
 
 == Installation ==
 
@@ -47,7 +47,7 @@ Let your visitors know your site is coming soon while you gather valuable contac
 
 == Frequently Asked Questions ==
 
-The Frequently Asked Questions are found on the [Easy Pie WP Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
+Please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/) for the FAQ.
 
 == Screenshots ==
 
@@ -59,6 +59,13 @@ The Frequently Asked Questions are found on the [Easy Pie WP Website](http://eas
 
 == Changelog ==
 
+= 0.5.2 =
+* Bugfix: Title of page can now be set.
+* Logo can now be set to take on native dimensions – no need to specify width/height if you don’t want to.
+* Notification that coming soon is off – allows for easy traversal to settings page.
+* Javascript variable introduced to allow for easy conversion tracking.
+* Minor text cleanup.
+
 = 0.5.1 =
 * Bug fix: require_once fixed for some Linux installs (thanks Ajith Nair)
 
@@ -66,6 +73,9 @@ The Frequently Asked Questions are found on the [Easy Pie WP Website](http://eas
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.5.2 =
+* Now you can change the title of your coming soon page. Also includes several usability improvements.
 
 = 0.5.1 =
 * Bug fix: require_once fixed for some Linux installs (thanks Ajith Nair)

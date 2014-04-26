@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Coming Soon Plugin\n"
-"POT-Creation-Date: 2014-04-23 04:59-0700\n"
-"PO-Revision-Date: 2014-04-23 04:59-0700\n"
+"POT-Creation-Date: 2014-04-26 07:50-0700\n"
+"PO-Revision-Date: 2014-04-26 07:50-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -72,14 +72,6 @@ msgstr ""
 msgid "Email button font must end in a unit (px, em, etc...)"
 msgstr ""
 
-#: ../classes/Entities/admin/class-ezp-cs-display-entity.php:87
-msgid "Logo width must end in px or %"
-msgstr ""
-
-#: ../classes/Entities/admin/class-ezp-cs-display-entity.php:88
-msgid "Logo height font must end in px or %"
-msgstr ""
-
 #: ../classes/Entities/admin/class-ezp-cs-display-entity.php:89
 msgid "Email button height font must end in px or %"
 msgstr ""
@@ -136,231 +128,237 @@ msgstr ""
 msgid "Email address is not valid"
 msgstr ""
 
-#: ../classes/Utilities/class-ezp-cs-utility.php:111
+#: ../classes/Utilities/class-ezp-cs-utility.php:113
 msgid "Coming Soon is On"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:460
-msgid "Easy Pie Coming Soon Template"
-msgstr ""
-
-#: ../classes/class-ezp-cs.php:460 ../pages/page-options.php:44
-msgid "Template"
+#: ../classes/Utilities/class-ezp-cs-utility.php:117
+msgid "Coming Soon is Off"
 msgstr ""
 
 #: ../classes/class-ezp-cs.php:461
-msgid "Easy Pie Coming Soon Settings"
+msgid "Easy Pie Coming Soon Template"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:461 ../pages/page-options-settings.php:33
-msgid "Settings"
+#: ../classes/class-ezp-cs.php:461 ../pages/page-options.php:44
+msgid "Template"
 msgstr ""
 
 #: ../classes/class-ezp-cs.php:462
-msgid "Easy Pie Coming Soon Subscribers"
+msgid "Easy Pie Coming Soon Settings"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:462 ../pages/page-options-subscribers.php:81
-msgid "Subscribers"
+#: ../classes/class-ezp-cs.php:462 ../pages/page-options-settings.php:33
+msgid "Settings"
 msgstr ""
 
 #: ../classes/class-ezp-cs.php:463
+msgid "Easy Pie Coming Soon Subscribers"
+msgstr ""
+
+#: ../classes/class-ezp-cs.php:463 ../pages/page-options-subscribers.php:86
+msgid "Subscribers"
+msgstr ""
+
+#: ../classes/class-ezp-cs.php:464
 msgid "Easy Pie Coming Soon Preview"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:463 ../pages/page-preview.php:31
+#: ../classes/class-ezp-cs.php:464 ../pages/page-preview.php:30
 msgid "Preview"
 msgstr ""
 
-#: ../mini-themes/base-responsive/index.php:173
-#: ../pages/page-options-subscribers.php:133
+#: ../mini-themes/base-responsive/index.php:192
+#: ../pages/page-options-subscribers.php:143
 msgid "Name"
 msgstr ""
 
-#: ../mini-themes/base-responsive/index.php:178
-#: ../pages/page-options-subscribers.php:134
+#: ../mini-themes/base-responsive/index.php:197
+#: ../pages/page-options-subscribers.php:144
 msgid "Email"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:54
-#: ../pages/page-options-display-tab.php:83
-#: ../pages/page-options-settings.php:78
+#: ../pages/page-options-content-tab.php:60
+#: ../pages/page-options-display-tab.php:89
+#: ../pages/page-options-settings.php:76
 msgid "Errors present:"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:58
-#: ../pages/page-options-display-tab.php:87
-#: ../pages/page-options-settings.php:82
+#: ../pages/page-options-content-tab.php:64
+#: ../pages/page-options-display-tab.php:93
+#: ../pages/page-options-settings.php:80
 msgid "Settings Saved."
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:58
-#: ../pages/page-options-display-tab.php:87
-#: ../pages/page-options-settings.php:82
+#: ../pages/page-options-content-tab.php:64
+#: ../pages/page-options-display-tab.php:93
+#: ../pages/page-options-settings.php:80
 msgid "If you have a caching plugin be sure to clear it."
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:63
-#: ../pages/page-options-display-tab.php:191
+#: ../pages/page-options-content-tab.php:69
+#: ../pages/page-options-display-tab.php:197
 msgid "Logo"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:67
-#: ../pages/page-options-display-tab.php:115
+#: ../pages/page-options-content-tab.php:73
+#: ../pages/page-options-display-tab.php:121
 msgid "Image"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:72
-#: ../pages/page-options-display-tab.php:164
+#: ../pages/page-options-content-tab.php:78
+#: ../pages/page-options-display-tab.php:170
 msgid "Upload"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:82
-#: ../pages/page-options-content-tab.php:86
+#: ../pages/page-options-content-tab.php:88
+#: ../pages/page-options-content-tab.php:92
 msgid "Title"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:100
+#: ../pages/page-options-content-tab.php:106
 msgid "Main Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:104
-#: ../pages/page-options-content-tab.php:191
+#: ../pages/page-options-content-tab.php:110
+#: ../pages/page-options-content-tab.php:197
 msgid "Headline"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:114
+#: ../pages/page-options-content-tab.php:120
 msgid "Description"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:124
+#: ../pages/page-options-content-tab.php:130
 msgid "Disclaimer"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:134
+#: ../pages/page-options-content-tab.php:140
 msgid "Footer"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:147
+#: ../pages/page-options-content-tab.php:153
 msgid "Email Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:152
+#: ../pages/page-options-content-tab.php:158
 msgid "Email Placeholder"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:162
+#: ../pages/page-options-content-tab.php:168
 msgid "Name Placeholder"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:172
+#: ../pages/page-options-content-tab.php:178
 msgid "Button"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:181
-msgid "Section relevant only if email collection is enabled in settings"
+#: ../pages/page-options-content-tab.php:187
+#: ../pages/page-options-content-tab.php:217
+msgid "Section relevant only if email collection is enabled in"
 msgstr ""
 
 #: ../pages/page-options-content-tab.php:187
+#: ../pages/page-options-content-tab.php:217
+msgid "settings"
+msgstr ""
+
+#: ../pages/page-options-content-tab.php:193
 msgid "Thank You Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:202
-#: ../pages/page-options-display-tab.php:255
+#: ../pages/page-options-content-tab.php:208
+#: ../pages/page-options-display-tab.php:261
 msgid "Text"
 msgstr ""
 
-#: ../pages/page-options-content-tab.php:211
-msgid "Section relevant only if email collection is enabled on the display tab"
-msgstr ""
-
-#: ../pages/page-options-display-tab.php:93
+#: ../pages/page-options-display-tab.php:99
 msgid "Display Template"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:95
+#: ../pages/page-options-display-tab.php:101
 msgid "Templates"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:96
+#: ../pages/page-options-display-tab.php:102
 msgid "Templates give you a starting point for your display settings."
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:101
+#: ../pages/page-options-display-tab.php:107
 msgid "Background"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:105
-#: ../pages/page-options-display-tab.php:240
-#: ../pages/page-options-display-tab.php:308
+#: ../pages/page-options-display-tab.php:111
+#: ../pages/page-options-display-tab.php:246
+#: ../pages/page-options-display-tab.php:314
 msgid "Color"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:119
+#: ../pages/page-options-display-tab.php:125
 msgid "Instead of background color use one of these images"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:160
+#: ../pages/page-options-display-tab.php:166
 msgid "or use your own"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:173
+#: ../pages/page-options-display-tab.php:179
 msgid "Tile"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:178
+#: ../pages/page-options-display-tab.php:184
 msgid "Enabled"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:181
+#: ../pages/page-options-display-tab.php:187
 msgid "Image covers screen when tiling is disabled"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:196
-#: ../pages/page-options-display-tab.php:283
+#: ../pages/page-options-display-tab.php:202
+#: ../pages/page-options-display-tab.php:289
 msgid "Width"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:201
-#: ../pages/page-options-display-tab.php:212
+#: ../pages/page-options-display-tab.php:207
+#: ../pages/page-options-display-tab.php:218
 msgid "Specify px or %"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:207
-#: ../pages/page-options-display-tab.php:294
+#: ../pages/page-options-display-tab.php:213
+#: ../pages/page-options-display-tab.php:300
 msgid "Height"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:223
+#: ../pages/page-options-display-tab.php:229
 msgid "Content Box"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:227
+#: ../pages/page-options-display-tab.php:233
 msgid "Opacity"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:271
+#: ../pages/page-options-display-tab.php:277
 msgid "Specify px or em for sizes"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:278
+#: ../pages/page-options-display-tab.php:284
 msgid "Email Button"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:288
-#: ../pages/page-options-display-tab.php:299
+#: ../pages/page-options-display-tab.php:294
+#: ../pages/page-options-display-tab.php:305
 msgid "Append px or %"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:323
+#: ../pages/page-options-display-tab.php:329
 msgid "Advanced"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:326
+#: ../pages/page-options-display-tab.php:332
 msgid "Custom CSS"
 msgstr ""
 
-#: ../pages/page-options-display-tab.php:334
+#: ../pages/page-options-display-tab.php:340
 msgid "CSS Customization tips"
 msgstr ""
 
@@ -368,162 +366,162 @@ msgstr ""
 msgid "If you have a caching plugin, be sure to clear the cache!"
 msgstr ""
 
-#: ../pages/page-options-settings.php:87
+#: ../pages/page-options-settings.php:85
 msgid "General"
 msgstr ""
 
-#: ../pages/page-options-settings.php:91
+#: ../pages/page-options-settings.php:89
 msgid "Status"
 msgstr ""
 
-#: ../pages/page-options-settings.php:95
+#: ../pages/page-options-settings.php:93
 msgid "On"
 msgstr ""
 
-#: ../pages/page-options-settings.php:96
+#: ../pages/page-options-settings.php:94
 msgid "Off"
 msgstr ""
 
-#: ../pages/page-options-settings.php:106
+#: ../pages/page-options-settings.php:104
 msgid "Collection"
 msgstr ""
 
-#: ../pages/page-options-settings.php:110
+#: ../pages/page-options-settings.php:108
 msgid "Collect Email"
 msgstr ""
 
-#: ../pages/page-options-settings.php:115
-#: ../pages/page-options-settings.php:126
-#: ../pages/page-options-subscribers.php:151
+#: ../pages/page-options-settings.php:113
+#: ../pages/page-options-settings.php:124
+#: ../pages/page-options-subscribers.php:161
 msgid "Yes"
 msgstr ""
 
-#: ../pages/page-options-settings.php:121
+#: ../pages/page-options-settings.php:119
 msgid "Collect Name"
 msgstr ""
 
-#: ../pages/page-options-settings.php:136
+#: ../pages/page-options-settings.php:134
 msgid "HTTP"
 msgstr ""
 
-#: ../pages/page-options-settings.php:140
+#: ../pages/page-options-settings.php:138
 msgid "Return Code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:144
+#: ../pages/page-options-settings.php:142
 msgid "200"
 msgstr ""
 
-#: ../pages/page-options-settings.php:145
+#: ../pages/page-options-settings.php:143
 msgid "503"
 msgstr ""
 
-#: ../pages/page-options-settings.php:154
+#: ../pages/page-options-settings.php:152
 msgid "Social"
 msgstr ""
 
-#: ../pages/page-options-settings.php:158
+#: ../pages/page-options-settings.php:156
 msgid "Facebook URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:168
+#: ../pages/page-options-settings.php:166
 msgid "Google Plus URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:178
+#: ../pages/page-options-settings.php:176
 msgid "Twitter URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:192
+#: ../pages/page-options-settings.php:190
 msgid "SEO"
 msgstr ""
 
-#: ../pages/page-options-settings.php:196
+#: ../pages/page-options-settings.php:194
 msgid "Author URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:201
+#: ../pages/page-options-settings.php:199
 msgid "Google+ or other identifying URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:207
+#: ../pages/page-options-settings.php:205
 msgid "Meta Description"
 msgstr ""
 
-#: ../pages/page-options-settings.php:217
+#: ../pages/page-options-settings.php:215
 msgid "Meta Keywords"
 msgstr ""
 
-#: ../pages/page-options-settings.php:222
+#: ../pages/page-options-settings.php:220
 msgid "Comma separated list"
 msgstr ""
 
-#: ../pages/page-options-settings.php:228
+#: ../pages/page-options-settings.php:226
 msgid "Analytics Code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:233
+#: ../pages/page-options-settings.php:231
 msgid "Analytics tracking code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:233
+#: ../pages/page-options-settings.php:231
 msgid "include"
 msgstr ""
 
-#: ../pages/page-options-settings.php:244
-#: ../pages/page-options-subscribers.php:179 ../pages/page-options.php:77
+#: ../pages/page-options-settings.php:242
+#: ../pages/page-options-subscribers.php:189 ../pages/page-options.php:77
 msgid "Plugin FAQ"
 msgstr ""
 
-#: ../pages/page-options-settings.php:246
-#: ../pages/page-options-subscribers.php:181 ../pages/page-options.php:79
+#: ../pages/page-options-settings.php:244
+#: ../pages/page-options-subscribers.php:191 ../pages/page-options.php:79
 msgid "Contact"
 msgstr ""
 
-#: ../pages/page-options-settings.php:248
-#: ../pages/page-options-subscribers.php:183 ../pages/page-options.php:81
+#: ../pages/page-options-settings.php:246
+#: ../pages/page-options-subscribers.php:193 ../pages/page-options.php:81
 msgid "Donate"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:135
+#: ../pages/page-options-subscribers.php:145
 msgid "Date"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:136
-#: ../pages/page-options-subscribers.php:149
-#: ../pages/page-options-subscribers.php:153
+#: ../pages/page-options-subscribers.php:146
+#: ../pages/page-options-subscribers.php:159
+#: ../pages/page-options-subscribers.php:163
 msgid "Delete"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:145
+#: ../pages/page-options-subscribers.php:155
 msgid "unknown"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:152
+#: ../pages/page-options-subscribers.php:162
 msgid "No"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:163
+#: ../pages/page-options-subscribers.php:173
 msgid "Prev"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:164
+#: ../pages/page-options-subscribers.php:174
 msgid "Page"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:164
+#: ../pages/page-options-subscribers.php:174
 msgid "of"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:166
+#: ../pages/page-options-subscribers.php:176
 msgid "Next"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:168
+#: ../pages/page-options-subscribers.php:178
 msgid "CSV Export All"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:176
+#: ../pages/page-options-subscribers.php:186
 msgid "Delete User?"
 msgstr ""
 

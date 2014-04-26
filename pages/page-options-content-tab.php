@@ -184,7 +184,7 @@ if ($error_string != "") :
                 </td>
             </tr>       
         </table>
-        <div style="margin-top:17px"><span class="description"><?php echo '*' . EZP_CS_Utility::__('Section relevant only if email collection is enabled in settings'); ?></span></div>
+        <div style="margin-top:17px"><span class="description"><?php echo '*' . EZP_CS_Utility::__('Section relevant only if email collection is enabled in') . ' <a href="' . admin_url() . 'admin.php?page=' . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . '">' . self::__('settings') . '</a>'; ?></span></div>
     </div>
 </div>
 
@@ -214,5 +214,5 @@ if ($error_string != "") :
                 </td>
             </tr>
         </table>
-        <div style="margin-top:17px"><span class="description"><?php echo '*' . EZP_CS_Utility::__('Section relevant only if email collection is enabled on the display tab'); ?></span></div>
+        <div style="margin-top:17px"><span class="description"><?php echo '*' . EZP_CS_Utility::__('Section relevant only if email collection is enabled in') . ' <a href="' . admin_url() . 'admin.php?page=' . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . '">' . self::__('settings') . '</a>'; ?></span></div>
     </div></div>

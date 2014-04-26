@@ -16,14 +16,15 @@
     $error_display = 'none';
     $error_text = '';
     
+    $js_thank_you = "var thankYouDisplayed=false;";
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                
+                  
         $subscriber = new EZP_CS_Subscriber_Entity();
         
         $error_text = EZP_CS_Query_Utility::add_new_subscriber($_POST['name'], $_POST['email']);   
         
         if($error_text == null) {
-            
+            $js_thank_you = "var thankYouDisplayed=true;";
             $initial_section_display = 'none';                
             $thank_you_section_display = 'block';
         } else {
@@ -154,6 +155,10 @@
             $display->css
             ";?>
         </style>
+        
+        <script type="text/javascript">
+            <?php echo $js_thank_you; ?>
+        </script>
         
         <!-- Analytics Code -->
         <?php echo $config->analytics_code; ?>

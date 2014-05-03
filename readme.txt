@@ -1,4 +1,4 @@
-=== Easy Pie Coming Soon ===
+=== EasyPie Coming Soon Page ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction, mailchimp, aweber

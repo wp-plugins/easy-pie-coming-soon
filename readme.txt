@@ -1,4 +1,4 @@
-=== Easy Pie Coming Soon ===
+=== Coming Soon Page ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
@@ -8,13 +8,13 @@ Stable tag: 0.5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Let visitors know that your website is coming soon and collect emails at the same time!
+Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collect emails!
 
 == Description ==
-Let your visitors know your site is coming soon while you gather valuable contact information on prospects easily.
+Let your visitors know your site is Coming Soon while gathering their contact information.
 
 ### Basic Features
-* Professional looking
+* Professional look
 * Highly customizable
 * Collects Names and Emails
 * Fully Responsive
@@ -31,27 +31,39 @@ Let your visitors know your site is coming soon while you gather valuable contac
 
 
 ### Advanced Features
-* Easily export email addresses to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
+* Export email addresses gathered by Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
 
 == Installation ==
 
-1. Click Plugins/Add New from the WordPress admin panel
-1. Search for "easy pie Coming Soon" and install
+= Using The WordPress Dashboard =
 
--or-
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Search for 'Coming Soon Page'
+3. Click 'Install Now'
+4. Activate the plugin on the Plugin dashboard
 
-1. Download the .zip package
-1. Unzip into the subdirectory 'easy-pie-coming-soon' within your local WordPress plugins directory
-1. Refresh plugin page and activate plugin
-1. Configure plugin using *settings* link under plugin name or by going to Settings/Coming Soon
+= Uploading in WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `easy-pie-coming-soon.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+
+= Using FTP =
+
+1. Download `easy-pie-coming-soon.zip`
+2. Extract the `easy-pie-coming-soon` directory to your computer
+3. Upload the `easy-pie-coming-soon` directory to the `/wp-content/plugins/` directory
+4. Activate the plugin in the Plugin's dashboard
 
 == Frequently Asked Questions ==
 
-Please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/) for the FAQ.
+For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
 
 == Screenshots ==
 
-1. Example page 
+1. Example Coming Soon page 
 2. Display configuration
 3. Content configuration
 4. Settings
@@ -61,8 +73,8 @@ Please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-fa
 
 = 0.5.2 =
 * Bugfix: Title of page can now be set.
-* Logo can now be set to take on native dimensions – no need to specify width/height if you don’t want to.
-* Notification that coming soon is off – allows for easy traversal to settings page.
+* Logo can now be set to take on native dimensions - no need to specify width/height if you don't want to.
+* Notification that coming soon is off - allows for easy traversal to settings page.
 * Javascript variable introduced to allow for easy conversion tracking.
 * Minor text cleanup.
 

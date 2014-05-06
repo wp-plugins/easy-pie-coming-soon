@@ -11,10 +11,10 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collect emails!
 
 == Description ==
-Let your visitors know your site is Coming Soon while you gather valuable contact information on prospects easily.
+Let your visitors know your site is Coming Soon while gathering their contact information.
 
 ### Basic Features
-* Professional looking
+* Professional look
 * Highly customizable
 * Collects Names and Emails
 * Fully Responsive
@@ -31,19 +31,31 @@ Let your visitors know your site is Coming Soon while you gather valuable contac
 
 
 ### Advanced Features
-* Easily export email addresses to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
+* Export email addresses gathered by Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
 
 == Installation ==
 
-1. Click Plugins/Add New from the WordPress admin panel
-1. Search for "Coming Soon Page" and install
+= Using The WordPress Dashboard =
 
--or-
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Search for 'Coming Soon Page'
+3. Click 'Install Now'
+4. Activate the plugin on the Plugin dashboard
 
-1. Download the .zip package
-1. Unzip into the subdirectory 'easy-pie-coming-soon' within your local WordPress plugins directory
-1. Refresh plugin page and activate plugin
-1. Configure plugin using *settings* link under plugin name or by going to Settings/Coming Soon
+= Uploading in WordPress Dashboard =
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `easy-pie-coming-soon.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+
+= Using FTP =
+
+1. Download `easy-pie-coming-soon.zip`
+2. Extract the `easy-pie-coming-soon` directory to your computer
+3. Upload the `easy-pie-coming-soon` directory to the `/wp-content/plugins/` directory
+4. Activate the plugin in the Plugin's dashboard
 
 == Frequently Asked Questions ==
 

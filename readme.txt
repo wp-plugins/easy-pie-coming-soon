@@ -8,10 +8,10 @@ Stable tag: 0.5.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Let visitors know that your website is coming soon and collect emails at the same time!
+Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collect emails!
 
 == Description ==
-Let your visitors know your site is coming soon while you gather valuable contact information on prospects easily.
+Let your visitors know your site is Coming Soon while you gather valuable contact information on prospects easily.
 
 ### Basic Features
 * Professional looking
@@ -36,7 +36,7 @@ Let your visitors know your site is coming soon while you gather valuable contac
 == Installation ==
 
 1. Click Plugins/Add New from the WordPress admin panel
-1. Search for "easy pie Coming Soon" and install
+1. Search for "Coming Soon Page" and install
 
 -or-
 
@@ -47,11 +47,11 @@ Let your visitors know your site is coming soon while you gather valuable contac
 
 == Frequently Asked Questions ==
 
-Please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/) for the FAQ.
+For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
 
 == Screenshots ==
 
-1. Example page 
+1. Example Coming Soon page 
 2. Display configuration
 3. Content configuration
 4. Settings
@@ -61,8 +61,8 @@ Please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-fa
 
 = 0.5.2 =
 * Bugfix: Title of page can now be set.
-* Logo can now be set to take on native dimensions – no need to specify width/height if you don’t want to.
-* Notification that coming soon is off – allows for easy traversal to settings page.
+* Logo can now be set to take on native dimensions - no need to specify width/height if you don't want to.
+* Notification that coming soon is off - allows for easy traversal to settings page.
 * Javascript variable introduced to allow for easy conversion tracking.
 * Minor text cleanup.
 

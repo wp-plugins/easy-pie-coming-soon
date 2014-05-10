@@ -3,7 +3,7 @@ Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5
-Tested up to: 3.9
+Tested up to: 3.9.1
 Stable tag: 0.5.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -18,6 +18,7 @@ Let your visitors know your site is Coming Soon while gathering their contact in
 * Highly customizable
 * Collects Names and Emails
 * Fully Responsive
+* Optional countdown timer
 * No HTML required
 * CSS customizable but not required
 * Use built in backgrounds or your own
@@ -28,6 +29,7 @@ Let your visitors know your site is Coming Soon while gathering their contact in
 * Facebook Support 
 * Google+ Support
 * Twitter Support
+* Selectively disable Coming Soon Page on certain URLs
 
 
 ### Advanced Features
@@ -71,6 +73,11 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 0.5.4 =
+* Added countdown timer.
+* Can now disable Coming Soon for user-specified URLs.
+* Minor tweaks.
+
 = 0.5.2 =
 * Bugfix: Title of page can now be set.
 * Logo can now be set to take on native dimensions - no need to specify width/height if you don't want to.
@@ -85,6 +92,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.5.4 =
+Added countdown timer. Also added ability to disable Coming Soon Page for specific site URLs. Additionally, made a few minor tweaks.
 
 = 0.5.2 =
 * Now you can change the title of your coming soon page. Also includes several usability improvements.

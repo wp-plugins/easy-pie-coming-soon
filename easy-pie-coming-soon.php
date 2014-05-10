@@ -1,6 +1,6 @@
 <?php
 /*
-  Plugin Name: Easy Pie Coming Soon
+  Plugin Name: Coming Soon Page
   Plugin URI: http://easypiewp.com/easy-pie-coming-soon-faq/
   Description: Let people know that your site is 'coming soon'. Visitors can submit their email addresses for future notification.
   Version: 0.5.3

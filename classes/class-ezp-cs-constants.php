@@ -32,7 +32,7 @@ if (!class_exists('EZP_CS_Constants')) {
         const COMPOUND_OPTION_NAME = 'easy-pie-cs-options';
         const MAIN_PAGE_KEY = 'easy-pie-cs-main-page';
         const PLUGIN_SLUG = 'easy-pie-coming-soon';
-        const PLUGIN_VERSION = "0.5.3"; // RSR Version
+        const PLUGIN_VERSION = "0.5.4"; // RSR Version
         
 
         

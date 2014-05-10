@@ -21,17 +21,17 @@
  */
 ?>
 <?php
-    if( isset( $_GET[ 'tab' ] ) ) {  
-        
-        $active_tab = $_GET[ 'tab' ];  
-    } else {
-        
-        $active_tab = 'display';
-    }
+if (isset($_GET['tab'])) {
+
+    $active_tab = $_GET['tab'];
+} else {
+
+    $active_tab = 'display';
+}
 ?>
 
 <script type="text/javascript" src='<?php echo EZP_CS_Utility::$PLUGIN_URL . "/js/page-options-$active_tab-tab.js?" . EZP_CS_Constants::PLUGIN_VERSION; ?>'></script>
-    
+
 <style lang="text/css">
     .compound-setting { line-height:20px;}
     .narrow-input { width:66px;}
@@ -46,41 +46,39 @@
     if (isset($_GET['settings-updated'])) {
         echo "<div class='updated'><p>" . EZP_CS_Utility::__('If you have a caching plugin, be sure to clear the cache!') . "</p></div>";
     }
-    
     ?>
     <div id="easypie-cs-options" class="inside">
         <h2 class="nav-tab-wrapper">  
-            <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=display' ?>" class="nav-tab <?php echo $active_tab == 'display' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Display');?></a>  
-            <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=content' ?>" class="nav-tab <?php echo $active_tab == 'content' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Content');?></a>  
+            <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=display' ?>" class="nav-tab <?php echo $active_tab == 'display' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Display'); ?></a>  
+            <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=content' ?>" class="nav-tab <?php echo $active_tab == 'content' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Content'); ?></a>  
         </h2>
-        <form id="easy-pie-cs-main-form" method="post" action="<?php echo admin_url( 'admin.php?page=' . EZP_CS_Constants::PLUGIN_SLUG . '&tab=' . $active_tab ); ?>" > 
+        <form id="easy-pie-cs-main-form" method="post" action="<?php echo admin_url('admin.php?page=' . EZP_CS_Constants::PLUGIN_SLUG . '&tab=' . $active_tab); ?>" > 
             <?php
-          //  settings_fields(EZP_CS_Constants::MAIN_PAGE_KEY);
+            //  settings_fields(EZP_CS_Constants::MAIN_PAGE_KEY);
             //do_settings_sections(EZP_CS_Constants::MAIN_PAGE_KEY);
             ?>            
             <div id='tab-holder'>
                 <?php
-                if($active_tab == 'display') {
+                if ($active_tab == 'display') {
                     include 'page-options-display-tab.php';
-                }
-                else {                   
+                } else {
                     include 'page-options-content-tab.php';
                 }
-                
                 ?>         
             </div>           
-            
-            <?php
-            submit_button();
-            ?>
-                            
-                <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ');?></a>
-                |
-                <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob';?></a>
-                |
-                <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
+
+                <?php
+                submit_button();
+                ?>
+
+            <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ'); ?></a>
+            |
+            <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob'; ?></a>
+            |
+            <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate Plugin'); ?></a>
+            |
+            <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
         </form>
     </div>
 </div>
-    
-    
+

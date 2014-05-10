@@ -44,6 +44,9 @@ if (!class_exists('EZP_CS_Content_Entity')) {
         public $thank_you_headline;
         public $thank_you_description;
         public $title;
+        
+        public $countdown_due_date;
+
 
         function __construct() {
 
@@ -60,6 +63,8 @@ if (!class_exists('EZP_CS_Content_Entity')) {
             $this->thank_you_description = EZP_CS_Utility::__("You'll hear from us when we launch.");
 
             $this->title = EZP_CS_Utility::__("Coming soon");
+            
+            $this->countdown_due_date = "";
             parent::__construct();
         }
 

@@ -34,4 +34,4 @@ $global = EZP_CS_Global_Entity::get_instance();
 $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
 EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
 ?>
-<iframe style="margin-top:20px; margin-left: 15px; width:80%; height: 600px" src="<?php echo $page_url; ?>"/>
+<iframe style="margin-top:20px; margin-left: 15px; width:94%; height: 675px" src="<?php echo $page_url; ?>"/>

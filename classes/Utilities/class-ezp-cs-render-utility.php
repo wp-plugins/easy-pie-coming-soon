@@ -23,22 +23,35 @@
 
 if (!class_exists('EZP_CS_Render_Utility')) {
 
-    /**     
+    /**
      * @author Bob Riley <bob@easypiewp.com>
      * @copyright 2014 Synthetic Thought LLC
      */
     class EZP_CS_Render_Utility {
 
-        public function get_display($value, $default)
-        {
-            if((!isset($value)) || (trim($value) == "")) {
-                
+        public function get_display($value, $default) {
+            if ((!isset($value)) || (trim($value) == "")) {
+
                 return "none";
-            }
-            else {
+            } else {
                 return $default;
             }
         }
-    } 
+
+        public static function get_datepicker_date_format() {
+            
+            $wp_format = get_option( 'date_format' );
+            
+            switch ($wp_format) {
+                
+                case 'Y/m/d':
+                    return( 'yy/mm/dd' );
+                    break;
+                default:
+                    return( 'mm/dd/yy' );                    
+            }
+        }
+    }
+
 }
 ?>

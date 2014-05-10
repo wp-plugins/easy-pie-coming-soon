@@ -39,7 +39,8 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 
     check_admin_referer('easy-pie-coming-soon-save-content');
 
-    // Artificially set the bools since they aren't part of the postback
+    // Artificially set the bools since they aren't part of the postback    
+    // TODO
     $error_string = $content->set_post_variables($_POST);
 
     if ($error_string == "") {
@@ -48,6 +49,9 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
     }
 }
 ?>
+<script type="text/javascript">
+   ezp_cs_datepicker_date_format = "<?php echo EZP_CS_Render_Utility::get_datepicker_date_format(); ?>";       
+</script>
 
 <?php wp_nonce_field('easy-pie-coming-soon-save-content'); ?>
 <input type="hidden" name="action" value="save"/>
@@ -215,4 +219,24 @@ if ($error_string != "") :
             </tr>
         </table>
         <div style="margin-top:17px"><span class="description"><?php echo '*' . EZP_CS_Utility::__('Section relevant only if email collection is enabled in') . ' <a href="' . admin_url() . 'admin.php?page=' . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . '">' . self::__('settings') . '</a>'; ?></span></div>
+    </div></div>
+
+<div class="postbox" >
+    <div class="inside" >
+        <h3 ><?php EZP_CS_Utility::_e("Countdown") ?></h3>
+        <table class="form-table"> 
+            <tr>
+                <th scope="row">
+                    <?php echo EZP_CS_Utility::_e("Due Date") ?>
+                </th>
+                <td>
+                    <div class="compound-setting">                            
+                        <input style="width:90px;" id="ezp-countdown-due-date" class="long-input" name="countdown_due_date" type="text" value="<?php EZP_CS_Utility::_he($content->countdown_due_date); ?>" />
+                        <div><span class="description"><?php EZP_CS_Utility::_e('Countdown timer will display when populated'); ?></span></div>
+                    </div>
+                </td>
+            </tr>
+
+
+        </table>
     </div></div>

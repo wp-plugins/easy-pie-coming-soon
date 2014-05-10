@@ -234,7 +234,26 @@
                         </tr>
                     </table>
                 </div>
-            </div>       
+            </div>  
+
+            <div class="postbox" >
+                <div class="inside" >
+                    <h3><?php EZP_CS_Utility::_e("Filters") ?></h3>
+                    <table class="form-table"> 
+                        <tr>
+                            <th scope="row">
+                                <?php echo EZP_CS_Utility::_e("Unfiltered URLs") ?>
+                            </th>
+                            <td>
+                                <div class="compound-setting">                            
+                                    <textarea rows="5" cols="60" name="unfiltered_urls" type="text" ><?php echo $config->unfiltered_urls; ?></textarea>
+                                    <div><span class="description"><?php EZP_CS_Utility::_e('Each line should contain a relative URL you don\'t want the page shown on (e.g. for http://mysite.com/mypage enter /mypage)'); ?></span></div>
+                                </div>
+                            </td>
+                        </tr>                           
+                    </table>
+                </div>
+            </div>    
 
             <?php
             submit_button();
@@ -242,6 +261,8 @@
             <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ'); ?></a>
             |
             <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob'; ?></a>
+            |
+            <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate Plugin'); ?></a>
             |
             <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
         </form>

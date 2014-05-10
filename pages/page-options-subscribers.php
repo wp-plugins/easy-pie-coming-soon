@@ -86,9 +86,9 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
     <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Subscribers') ?></h2>
 
     <?php
-        EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);    
+    EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
     ?>
-    
+
     <div id="easypie-cs-options" class="inside">
 
         <?php
@@ -179,7 +179,9 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
                 </div>
 
 
-
+                <div style="text-align:center; margin-top:20px;">
+                    <a href='http://easypiewp.com/creating-mailing-list-coming-soon-page-subscribers/' target="_blank"><?php EZP_CS_Utility::_e('Create an email list from subscribers');?></a>
+                </div>
             </div>
         </div>
     </div>
@@ -187,7 +189,9 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
         <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><span id='easy-pie-cs-delete-confirm-text'></span></p>
     </div>         
     <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ'); ?></a>
-    |    
+    |
     <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob'; ?></a>
+    |
+    <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate Plugin'); ?></a>
     |
     <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>

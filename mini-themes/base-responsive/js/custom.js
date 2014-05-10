@@ -1,13 +1,14 @@
-/* Count Down Timer */
+/* Countdown Timer */
 
-//$('#clock').countdown('2017/10/10', function(event) {
-//     var $this = $(this).html(event.strftime(''
-//         + '<div class="br-red">%Y <span>Years</span></div> '
-//         + '<div class="br-blue">%d <span>Days</span></div> '
-//         + '<div class="br-green">%H <span>Hrs</span></div>  '
-//         + '<div class="br-orange">%M <span>Min</span></div> '
-//         + '<div class="br-lblue">%S <span>Sec</span></div> '));
-// });
+$('#countdown').countdown(clockEndDate, function(event) {
+    
+     var $this = $(this).html(event.strftime(''
+         
+         + '<div id="countdown-days" >%D <span>Days</span></div> '
+         + '<div id="countdown-hours" >%H <span>Hrs</span></div>  '
+         + '<div id="countdown-minutes" >%M <span>Min</span></div> '
+         + '<div id="countdown-seconds" >%S <span>Sec</span></div> '));
+ });
  
  /* Slider Backgrounds */
  

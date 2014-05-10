@@ -47,8 +47,9 @@ if (!class_exists('EZP_CS_Config_Entity')) {
         public $facebook_url;
         public $twitter_url;
         public $google_plus_url;
-
         
+        public $unfiltered_urls;
+               
         function __construct() {
 
             $this->coming_soon_mode_on = false;
@@ -67,6 +68,8 @@ if (!class_exists('EZP_CS_Config_Entity')) {
             $this->facebook_url = "";
             $this->twitter_url = "";
             $this->google_plus_url = "";
+            
+            $this->allowed_urls = "";
 
             parent::__construct();
         }

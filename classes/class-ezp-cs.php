@@ -52,18 +52,18 @@ if (!class_exists('EZP_CS')) {
             $this->add_class_action('plugins_loaded', 'plugins_loaded_handler');
 
             $entity_table_present = EZP_CS_Query_Utility::is_table_present(EZP_CS_JSON_Entity_Base::DEFAULT_TABLE_NAME);
-                                   
-            if($entity_table_present) {
-            
+
+            if ($entity_table_present) {
+
                 $global = EZP_CS_Global_Entity::get_instance();
-                
+
                 $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
-                
+
                 $coming_soon_mode_on = $config->coming_soon_mode_on;
 
                 $in_preview = isset($_REQUEST['ezp_cs_preview']) && ($_REQUEST['ezp_cs_preview'] == 'true');
             } else {
-                
+
                 // On activation so we don't have the tables yet
                 $coming_soon_mode_on = false;
                 $in_preview = false;
@@ -123,7 +123,7 @@ if (!class_exists('EZP_CS')) {
 
                     $subscribers = EZP_CS_Query_Utility::get_subscriber_list(-1);
 
-                    echo "Name, Email, Date\r\n";
+                    echo "Name, Email Address, Date\r\n";
                     foreach ($subscribers as $subscriber) {
 
                         if ($subscriber->subscription_date != '') {
@@ -278,22 +278,25 @@ if (!class_exists('EZP_CS')) {
          * Display the maintenance page
          */
         public function display_coming_soon_page() {
+            $global = EZP_CS_Global_Entity::get_instance();
+
+            $set_index = $global->active_set_index;
+
+            $set = EZP_CS_Set_Entity::get_by_id($set_index);
+
+            $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
 
             $in_preview = isset($_REQUEST['ezp_cs_preview']) && ($_REQUEST['ezp_cs_preview'] == 'true');
 
-            
-            // RSR TODO: Need to put an enabled box somewhere
-            //             
-            // For now 
-            if (!is_user_logged_in() || $in_preview) {
+            if(trim($config->unfiltered_urls) != "") {
+                
+                $is_unfiltered = EZP_CS_Utility::is_current_url_unfiltered($config);
+            } else {
+                
+                $is_unfiltered = false;
+            }
 
-                $global = EZP_CS_Global_Entity::get_instance();
-
-                $set_index = $global->active_set_index;
-
-                $set = EZP_CS_Set_Entity::get_by_id($set_index);
-
-                $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+            if (!$is_unfiltered && (!is_user_logged_in() || $in_preview)) {
 
                 if ($config->return_code == 503) {
 
@@ -370,6 +373,9 @@ if (!class_exists('EZP_CS')) {
 
                         wp_enqueue_script('jquery-ui-slider');
                         wp_enqueue_script('spectrum.min.js', $jQueryPluginRoot . '/spectrum-picker/spectrum.min.js', array('jquery'), EZP_CS_Constants::PLUGIN_VERSION);
+                    } else {
+                        // Implies it is the content tab
+                        wp_enqueue_script('jquery-ui-datepicker');
                     }
 
                     wp_enqueue_media();

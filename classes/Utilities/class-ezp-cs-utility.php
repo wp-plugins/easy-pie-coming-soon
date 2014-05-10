@@ -21,11 +21,11 @@
   SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-require_once(dirname(__FILE__) .  '/../class-ezp-cs-constants.php');
+require_once(dirname(__FILE__) . '/../class-ezp-cs-constants.php');
 
 if (!class_exists('EZP_CS_Utility')) {
 
-    /**     
+    /**
      * @author Bob Riley <bob@easypiewp.com>
      * @copyright 2014 Synthetic Thought LLC
      */
@@ -35,20 +35,19 @@ if (!class_exists('EZP_CS_Utility')) {
         public static $MINI_THEMES_TEMPLATE_DIRECTORY;
         public static $PLUGIN_URL;
         public static $PLUGIN_DIRECTORY;
-        
         private static $type_format_array;
-        
+
         public static function init() {
-                        
+
             $__dir__ = dirname(__FILE__);
-            
+
             self::$MINI_THEMES_TEMPLATE_DIRECTORY = $__dir__ . "/../templates/";
 
             self::$PLUGIN_URL = plugins_url() . "/" . EZP_CS_Constants::PLUGIN_SLUG;
-            
+
             self::$PLUGIN_DIRECTORY = (WP_CONTENT_DIR . "/plugins/" . EZP_CS_Constants::PLUGIN_SLUG);
-            
-            self::$type_format_array = array('boolean' => '%s', 'integer' => '%d', 'double' => '%g', 'string' => '%s' );
+
+            self::$type_format_array = array('boolean' => '%s', 'integer' => '%d', 'double' => '%g', 'string' => '%s');
         }
 
         public static function _e($text) {
@@ -60,78 +59,73 @@ if (!class_exists('EZP_CS_Utility')) {
 
             return __($text, EZP_CS_Constants::PLUGIN_SLUG);
         }
-        
+
         public static function _he($text) {
 
             echo htmlspecialchars($text);
         }
-        
+
         public function get_db_type_format($variable) {
-            
+
             $type_string = gettype($variable);
-                       
-            if($type_string == "NULL") {
-            
+
+            if ($type_string == "NULL") {
+
                 self::debug("get_db_type_format: Error. Variable is not initialized.");
                 return "";
             }
-            
+
             return self::$type_format_array[$type_string];
         }
 
         public static function get_public_properties($object) {
-            
+
             $publics = get_object_vars($object);
             unset($publics['id']);
             unset($publics['type']);
-            
+
             return $publics;
-        }       
-        
+        }
+
         public static function get_public_class_properties($class_name) {
-            
+
             $publics = get_class_vars($class_name);
             unset($publics['id']);
-            
+
             return $publics;
-        }    
-       
+        }
+
         public static function get_guid() {
-            
-            if (function_exists('com_create_guid') === true)
-            {
+
+            if (function_exists('com_create_guid') === true) {
                 return trim(com_create_guid(), '{}');
             }
 
-            return sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));            
+            return sprintf('%04X%04X-%04X-%04X-%04X-%04X%04X%04X', mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(16384, 20479), mt_rand(32768, 49151), mt_rand(0, 65535), mt_rand(0, 65535), mt_rand(0, 65535));
         }
-      
-        public static function display_admin_notice($coming_soon_on)
-        {                        
-            if($coming_soon_on) {
-                
-                echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is On") . "</a></div>";                                                                
-                                
+
+        public static function display_admin_notice($coming_soon_on) {
+            if ($coming_soon_on) {
+
+                echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is On") . "</a></div>";
             } else {
-                
-                echo "<div style='text-decoration:underline' class='updated'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is Off") . "</a></div>";                                    
+
+                echo "<div style='text-decoration:underline' class='updated'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . self::__("Coming Soon is Off") . "</a></div>";
             }
-        }           
-        
-        /*-- Option Field Help Methods --*/       
-        
-        public static function render_option($value, $text, $current_value)
-        {
+        }
+
+        /* -- Option Field Help Methods -- */
+
+        public static function render_option($value, $text, $current_value) {
             $selected = "";
-                  
-            if($value == $current_value) 
-            {
-                $selected = 'selected="selected"';                
+
+            if ($value == $current_value) {
+                $selected = 'selected="selected"';
             }
-            
+
             echo "<option value='$value' $selected>$text</option>";
         }
-        
+
         public static function get_manifest_by_key($key) {
 
             $manifests = self::get_manifests();
@@ -146,7 +140,7 @@ if (!class_exists('EZP_CS_Utility')) {
 
             return null;
         }
-        
+
         public static function get_manifests() {
 
             $user_manifest_array = self::get_manifests_in_directory(self::$MINI_THEMES_USER_DIRECTORY, self::$MINI_THEMES_USER_URL);
@@ -249,18 +243,39 @@ if (!class_exists('EZP_CS_Utility')) {
                 }
             }
         }
-        
+
         public static function debug_object($object) {
-            
+
             EZP_CS_Utility::debug(var_export($object, true));
         }
-        
+
         public static function debug_dump($message, $object) {
-            
+
             EZP_CS_Utility::debug($message . ":" . var_export($object, true));
-        }                
+        }
+
+        public static function is_current_url_unfiltered($config) {
+            
+            $requested = strtolower($_SERVER[REQUEST_URI]);
+
+            $config->allowed_urls = strtolower($config->unfiltered_urls);
+            $urls = preg_split('/\r\n|[\r\n]/', $config->unfiltered_urls);
+
+            $is_unfiltered = false;
+            foreach ($urls as $url) {
+                
+                $trimmed_url = trim($url);
+                if ((strpos($requested, $trimmed_url) === 0)) {
+
+                    $is_unfiltered = true;
+                    break;
+                }
+            }
+
+            return $is_unfiltered;
+        }
     }
 
-    EZP_CS_Utility::init();    
+    EZP_CS_Utility::init();
 }
 ?>

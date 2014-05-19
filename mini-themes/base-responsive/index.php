@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $subscriber = new EZP_CS_Subscriber_Entity();
 
-    $error_text = EZP_CS_Query_Utility::add_new_subscriber($_POST['name'], $_POST['email']);
+    $error_text = EZP_CS_Query_Utility::add_new_subscriber($_POST['ezp_cs_name'], $_POST['ezp_cs_email']);
 
     if ($error_text == null) {
         $js_thank_you = "var thankYouDisplayed=true;";
@@ -192,17 +192,17 @@ echo "
 
                     <div id="countdown"></div>
 
-                    <form id="email-collection-box" name="email-collection-box" class="form-inline" role="form" action="index.php" method="post">
+                    <form id="email-collection-box" name="email-collection-box" class="form-inline" role="form" action="" method="post">
 
                         <!-- Setting: {{name-collection-on}}-->
                         <div id="name-form-group" class="form-group">
-                            <label class="sr-only" for="name"><?php EZP_CS_Utility::_e("Name"); ?></label>
+                            <label class="sr-only" for="ezp_cs_name"><?php EZP_CS_Utility::_e("Name"); ?></label>
                             <!-- Setting: {{name-placeholder}}-->
-                            <input id="name-input" name="name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
+                            <input id="name-input" name="ezp_cs_name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
                         </div>
                         <div id="email-form-group" class="form-group">
-                            <label class="sr-only" for="email"><?php EZP_CS_Utility::_e("Email"); ?></label>                            
-                            <input id="email-input" name="email" type="email" class="form-control" placeholder="<?php echo $content->email_placeholder_text; ?>"/>
+                            <label class="sr-only" for="ezp_cs_email"><?php EZP_CS_Utility::_e("Email"); ?></label>                            
+                            <input id="email-input" name="ezp_cs_email" type="email" class="form-control" placeholder="<?php echo $content->email_placeholder_text; ?>"/>
                         </div>
 
                         <button id="email-submit-button" form="email-collection-box" type="submit" class="btn btn-danger"><?php echo $content->email_button_text; ?></button>                        

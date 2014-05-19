@@ -29,7 +29,7 @@ if (!class_exists('EZP_CS_Render_Utility')) {
      */
     class EZP_CS_Render_Utility {
 
-        public function get_display($value, $default) {
+        public static function get_display($value, $default) {
             if ((!isset($value)) || (trim($value) == "")) {
 
                 return "none";

@@ -4,36 +4,42 @@ Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 0.5.2
+Stable tag: 0.5.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collect emails!
+Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collects emails for you!
 
 == Description ==
+
 Let your visitors know your site is Coming Soon while gathering their contact information.
 
 ### Basic Features
 * Professional look
 * Highly customizable
-* Collects Names and Emails
 * Fully Responsive
 * Optional countdown timer
 * No HTML required
 * CSS customizable but not required
-* Use built in backgrounds or your own
+* Use built in backgrounds or your own to give Coming Soon Page a great look
 * Add your own logo
 * Preview from Admin panel
 * Subscriber list shows name and emails of visitors
+* Simple indicator easily lets you know when Coming Soon mode is on
 * Easily translatable
 * Facebook Support 
 * Google+ Support
 * Twitter Support
+* Choose either a 503 or 200 HTTP status when in Coming Soon mode
 * Selectively disable Coming Soon Page on certain URLs
-
 
 ### Advanced Features
 * Export email addresses gathered by Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
+
+### Overview
+Coming Soon Page is a great way to let visitors know your site is Coming Soon.  When Coming Soon Page is displayed it collects valuable emails from potential customers in a friendly and professional way.  Coming Soon Page is also theme independent, having been confirmed to work well with top WordPress themes. 
+
+Finally, your visitors won't be just shown your web host's parked domain page, instead they'll know your site is truly 'Coming Soon'!
 
 == Installation ==
 

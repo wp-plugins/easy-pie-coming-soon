@@ -74,7 +74,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
     if ($error_string == "") {
 
         $action_updated = $display->save();
-    }
+    }       
 }
 ?>
 
@@ -82,7 +82,7 @@ if (isset($_POST['action']) && $_POST['action'] == 'save') {
 <input type="hidden" name="action" value="save"/>
 <?php
 
-EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
+//EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
 
 if ($error_string != "") :
     ?>

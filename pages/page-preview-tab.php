@@ -23,15 +23,14 @@ $relative_page_path = '/mini-themes/base-responsive/index.php';
 
 $__dir__ = dirname(__FILE__);
 
-$page_url = get_site_url() . '?ezp_cs_preview=true'
+$page_url = get_site_url() . '?ezp_cs_preview=true';
 
 //header( "Location: $page_url" ) ;
-?>
-<h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Preview') ?></h2>
-<?php
+
 $global = EZP_CS_Global_Entity::get_instance();
 
 $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
-EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
+//EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
 ?>
-<iframe style="margin-top:20px; margin-left: 15px; max-width:1200px; width:94%; height: 675px" src="<?php echo $page_url; ?>"/>
+
+<iframe style="margin-top:20px; margin-left: 15px; max-width:1200px; width:94%; height: 670px" src="<?php echo $page_url; ?>"/>

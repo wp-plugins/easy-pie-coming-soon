@@ -26,7 +26,7 @@ $global = EZP_CS_Global_Entity::get_instance();
 $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
 ?>
 
-<script type="text/javascript" src='<?php echo EZP_CS_Utility::$PLUGIN_URL . "/js/page-options-subscribers.js?" . EZP_CS_Constants::PLUGIN_VERSION; ?>'></script>
+<script type="text/javascript" src='<?php echo EZP_CS_Utility::$PLUGIN_URL . "/js/page-subscribers.js?" . EZP_CS_Constants::PLUGIN_VERSION; ?>'></script>
 
 <style lang="text/css">
     .compound-setting { line-height:20px;}
@@ -82,13 +82,6 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
 
 <div class="wrap">
 
-    <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
-    <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Subscribers') ?></h2>
-
-    <?php
-    EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
-    ?>
-
     <div id="easypie-cs-options" class="inside">
 
         <?php
@@ -138,6 +131,7 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
         <div class="postbox" style="margin-top:12px;" >
             <div class="inside" id="easy-pie-cs-postbox-inside" >
 
+                                
                 <table id="easypie-cs-subscriber-table">
                     <tr>
                         <th><?php EZP_CS_Utility::_e('Name'); ?></th>
@@ -168,30 +162,19 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
                     }
                     ?>        
                 </table>
-                <div id="easy-pie-cs-subscriber-controls" style="display: <?php echo $controls_display; ?>">
+                <div id="easy-pie-cs-subscriber-controls" style="display: <?php echo $controls_display; ?>; text-align:center;">
                     <button id="btn-prev" <?php echo $prev_disabled; ?> name="submit" type="submit" value="previous" onclick="window.location = '<?php echo $prev_url; ?>';
                             return false;"><span style='float:left; margin-top:1px' class="ui-icon ui-icon-triangle-1-w"></span><?php EZP_CS_Utility::_e("Prev"); ?></button>
                     <span ><?php echo EZP_CS_Utility::__('Page') . ' ' . ($current_page_idx + 1) . ' ' . EZP_CS_Utility::__('of') . ' ' . $num_pages; ?></span>
                     <button id="btn-next" <?php echo $next_disabled; ?> name="submit" type="submit" value="next" onclick="window.location = '<?php echo $next_url; ?>';
                             return false;"><?php EZP_CS_Utility::_e("Next"); ?><span style='float:right; margin-top:1px' class="ui-icon ui-icon-triangle-1-e"></span></button>
-                    <button id="btn-export" style='float:right' type="button" onclick="location.href = ajaxurl + '?action=EZP_CS_export_all_subscribers&_wpnonce=<?php echo $_wpnonce; ?>';
-                            return false;"><?php EZP_CS_Utility::_e('CSV Export All'); ?></button>
-                </div>
 
-
-                <div style="text-align:center; margin-top:20px;">
-                    <a href='http://easypiewp.com/creating-mailing-list-coming-soon-page-subscribers/' target="_blank"><?php EZP_CS_Utility::_e('Create an email list from subscribers');?></a>
                 </div>
+                <!-- RSR TODO: time box; TODO: random wording -->
+                <?php echo EZP_CS_Utility::get_coupon_text(); ?>                
             </div>
         </div>
     </div>
     <div id="easy-pie-cs-delete-confirm" title="<?php EZP_CS_Utility::_e('Delete User?'); ?>" >
         <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><span id='easy-pie-cs-delete-confirm-text'></span></p>
     </div>         
-    <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ'); ?></a>
-    |
-    <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob'; ?></a>
-    |
-    <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate Plugin'); ?></a>
-    |
-    <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>

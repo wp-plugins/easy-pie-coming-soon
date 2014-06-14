@@ -46,38 +46,63 @@ if (isset($_GET['tab'])) {
     if (isset($_GET['settings-updated'])) {
         echo "<div class='updated'><p>" . EZP_CS_Utility::__('If you have a caching plugin, be sure to clear the cache!') . "</p></div>";
     }
+    
+    $global = EZP_CS_Global_Entity::get_instance();
+
+    $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
+
+    EZP_CS_Utility::display_admin_notice($config->coming_soon_mode_on);
     ?>
+    
     <div id="easypie-cs-options" class="inside">
         <h2 class="nav-tab-wrapper">  
             <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=display' ?>" class="nav-tab <?php echo $active_tab == 'display' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Display'); ?></a>  
             <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=content' ?>" class="nav-tab <?php echo $active_tab == 'content' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Content'); ?></a>  
+            <a href="?page=<?php echo EZP_CS_Constants::PLUGIN_SLUG . '&tab=preview' ?>" class="nav-tab <?php echo $active_tab == 'preview' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Preview'); ?></a>  
         </h2>
         <form id="easy-pie-cs-main-form" method="post" action="<?php echo admin_url('admin.php?page=' . EZP_CS_Constants::PLUGIN_SLUG . '&tab=' . $active_tab); ?>" > 
             <?php
             //  settings_fields(EZP_CS_Constants::MAIN_PAGE_KEY);
-            //do_settings_sections(EZP_CS_Constants::MAIN_PAGE_KEY);
-            ?>            
+            //do_settings_sections(EZP_CS_Constants::MAIN_PAGE_KEY);                        
+
+            ?>      
             <div id='tab-holder'>
                 <?php
                 if ($active_tab == 'display') {
                     include 'page-options-display-tab.php';
-                } else {
+                } else if ($active_tab == 'content') {
                     include 'page-options-content-tab.php';
+                } else {
+                    include 'page-preview-tab.php';
                 }
+                                
+                if (isset($_POST['ezp-cs-submit-type']) && ($_POST['ezp-cs-submit-type'] == 'preview') ){
+                    
+                    $redirect_url = '?page=' . EZP_CS_Constants::PLUGIN_SLUG . '&tab=preview';
+                        
+                    echo '<script>'                    
+                        . 'window.location="' . $redirect_url . '";'
+                        . '</script>';                                                                 
+                }
+                
                 ?>         
+                <!-- after redirect -->
             </div>           
 
-                <?php
-                submit_button();
-                ?>
+            <input type="hidden" id="ezp-cs-submit-type" name="ezp-cs-submit-type" value="save"/>
+            
+            <p>
+                <input type="submit" name="submit" id="submit" class="button button-primary" value="Save Changes" />
+                <input style="margin-left:15px" type="submit" name="submit" id="submit" class="button button-primary" value="Save & Preview" onclick="document.getElementById('ezp-cs-submit-type').value = 'preview';debugger;return true;"/>
+            </p>                
 
             <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('Plugin FAQ'); ?></a>
             |
-            <a href="http://easypiewp.com/about/" target="_blank"><?php echo EZP_CS_Utility::__('Contact') . ' Bob'; ?></a>
-            |
             <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate Plugin'); ?></a>
-            |
+            |            
             <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
+            |
+            <a href="http://easypiewp.com/about/" target="_blank"><?php EZP_CS_Utility::_e('Feature Request') ?></a>
         </form>
     </div>
 </div>

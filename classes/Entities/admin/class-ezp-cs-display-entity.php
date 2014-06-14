@@ -38,7 +38,7 @@ if (!class_exists('EZP_CS_Display_Entity')) {
         public $background_color = "#00FF00";
         public $background_tiling_enabled = false;
                               
-        public $logo_width = "";
+        public $logo_width = "15%";
         public $logo_height = "";
         
         public $content_box_opacity = 0.4;

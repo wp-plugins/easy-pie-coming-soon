@@ -256,7 +256,7 @@ if (!class_exists('EZP_CS_Utility')) {
 
         public static function is_current_url_unfiltered($config) {
             
-            $requested = strtolower($_SERVER[REQUEST_URI]);
+            $requested = strtolower($_SERVER['REQUEST_URI']);
 
             $config->allowed_urls = strtolower($config->unfiltered_urls);
             $urls = preg_split('/\r\n|[\r\n]/', $config->unfiltered_urls);
@@ -273,6 +273,33 @@ if (!class_exists('EZP_CS_Utility')) {
             }
 
             return $is_unfiltered;
+        }
+        
+        public static function get_coupon_text()
+        {
+           $text = '';
+            
+           if(time() < strtotime('5 July 2014')) 
+           {
+               $r = rand(0, 1);
+               
+               switch($r) 
+               {
+                   case 0:
+                       $text = '$10 off coupon for upcoming Coming Soon Page Pro';
+                       break;
+                   
+                   case 1:
+                       $text = 'Get a $10 off coupon for the upcoming Coming Soon Page Pro';
+                       break;
+               }
+           }
+
+           if($text != '') {
+                $text = "<a target='_blank' style='margin-top:17px; display:block; text-align:center' href='http://easypiewp.com/get-coming-soon-page-pro-coupon/'>$text</p>";
+           }
+           
+           return $text;
         }
     }
 

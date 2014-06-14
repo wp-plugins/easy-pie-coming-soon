@@ -467,7 +467,7 @@ if (!class_exists('EZP_CS')) {
             $template_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Template'), $this->__('Template'), $perms, EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG, array($this, 'display_template_options_page'));
             $settings_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Settings'), $this->__('Settings'), $perms, EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG, array($this, 'display_settings_options_page'));
             $subscribers_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Subscribers'), $this->__('Subscribers'), $perms, EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG, array($this, 'display_subscribers_options_page'));
-            $preview_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Preview'), $this->__('Preview'), $perms, EZP_CS_Constants::$PREVIEW_SUBMENU_SLUG, array($this, 'display_preview_page'));
+        //    $preview_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Preview'), $this->__('Preview'), $perms, EZP_CS_Constants::$PREVIEW_SUBMENU_SLUG, array($this, 'display_preview_page'));
 
             add_action('admin_print_scripts-' . $template_page_hook_suffix, array($this, 'enqueue_scripts'));
             add_action('admin_print_scripts-' . $settings_page_hook_suffix, array($this, 'enqueue_scripts'));
@@ -499,7 +499,7 @@ if (!class_exists('EZP_CS')) {
         }
 
         function display_subscribers_options_page() {
-            $this->display_options_page('page-options-subscribers.php');
+            $this->display_options_page('page-subscribers.php');
         }
 
         function display_preview_page() {

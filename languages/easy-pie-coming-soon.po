@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Easy Pie Coming Soon Plugin\n"
-"POT-Creation-Date: 2014-05-10 09:59-0700\n"
-"PO-Revision-Date: 2014-05-10 10:00-0700\n"
+"POT-Creation-Date: 2014-06-14 16:49-0700\n"
+"PO-Revision-Date: 2014-06-14 16:49-0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
@@ -156,43 +156,35 @@ msgstr ""
 msgid "Easy Pie Coming Soon Subscribers"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:469 ../pages/page-options-subscribers.php:86
+#: ../classes/class-ezp-cs.php:469 ../pages/page-subscribers.php:56
 msgid "Subscribers"
 msgstr ""
 
-#: ../classes/class-ezp-cs.php:470
-msgid "Easy Pie Coming Soon Preview"
-msgstr ""
-
-#: ../classes/class-ezp-cs.php:470 ../pages/page-preview.php:30
-msgid "Preview"
-msgstr ""
-
 #: ../mini-themes/base-responsive/index.php:199
-#: ../pages/page-options-subscribers.php:143
+#: ../pages/page-subscribers-list-tab.php:137
 msgid "Name"
 msgstr ""
 
 #: ../mini-themes/base-responsive/index.php:204
-#: ../pages/page-options-subscribers.php:144
+#: ../pages/page-subscribers-list-tab.php:138
 msgid "Email"
 msgstr ""
 
 #: ../pages/page-options-content-tab.php:64
 #: ../pages/page-options-display-tab.php:89
-#: ../pages/page-options-settings.php:77
+#: ../pages/page-options-settings.php:76
 msgid "Errors present:"
 msgstr ""
 
 #: ../pages/page-options-content-tab.php:68
 #: ../pages/page-options-display-tab.php:93
-#: ../pages/page-options-settings.php:81
+#: ../pages/page-options-settings.php:80
 msgid "Settings Saved."
 msgstr ""
 
 #: ../pages/page-options-content-tab.php:68
 #: ../pages/page-options-display-tab.php:93
-#: ../pages/page-options-settings.php:81
+#: ../pages/page-options-settings.php:80
 msgid "If you have a caching plugin be sure to clear it."
 msgstr ""
 
@@ -378,192 +370,201 @@ msgstr ""
 msgid "If you have a caching plugin, be sure to clear the cache!"
 msgstr ""
 
-#: ../pages/page-options-settings.php:86
+#: ../pages/page-options-settings.php:85
 msgid "General"
 msgstr ""
 
-#: ../pages/page-options-settings.php:90
+#: ../pages/page-options-settings.php:89
 msgid "Status"
 msgstr ""
 
-#: ../pages/page-options-settings.php:94
+#: ../pages/page-options-settings.php:93
 msgid "On"
 msgstr ""
 
-#: ../pages/page-options-settings.php:95
+#: ../pages/page-options-settings.php:94
 msgid "Off"
 msgstr ""
 
-#: ../pages/page-options-settings.php:105
+#: ../pages/page-options-settings.php:104
 msgid "Collection"
 msgstr ""
 
-#: ../pages/page-options-settings.php:109
+#: ../pages/page-options-settings.php:108
 msgid "Collect Email"
 msgstr ""
 
-#: ../pages/page-options-settings.php:114
-#: ../pages/page-options-settings.php:125
-#: ../pages/page-options-subscribers.php:161
+#: ../pages/page-options-settings.php:113
+#: ../pages/page-options-settings.php:124
+#: ../pages/page-subscribers-list-tab.php:155
 msgid "Yes"
 msgstr ""
 
-#: ../pages/page-options-settings.php:120
+#: ../pages/page-options-settings.php:119
 msgid "Collect Name"
 msgstr ""
 
-#: ../pages/page-options-settings.php:135
+#: ../pages/page-options-settings.php:134
 msgid "HTTP"
 msgstr ""
 
-#: ../pages/page-options-settings.php:139
+#: ../pages/page-options-settings.php:138
 msgid "Return Code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:143
+#: ../pages/page-options-settings.php:142
 msgid "200"
 msgstr ""
 
-#: ../pages/page-options-settings.php:144
+#: ../pages/page-options-settings.php:143
 msgid "503"
 msgstr ""
 
-#: ../pages/page-options-settings.php:153
+#: ../pages/page-options-settings.php:152
 msgid "Social"
 msgstr ""
 
-#: ../pages/page-options-settings.php:157
+#: ../pages/page-options-settings.php:156
 msgid "Facebook URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:167
+#: ../pages/page-options-settings.php:166
 msgid "Google Plus URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:177
+#: ../pages/page-options-settings.php:176
 msgid "Twitter URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:191
+#: ../pages/page-options-settings.php:190
 msgid "SEO"
 msgstr ""
 
-#: ../pages/page-options-settings.php:195
+#: ../pages/page-options-settings.php:194
 msgid "Author URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:200
+#: ../pages/page-options-settings.php:199
 msgid "Google+ or other identifying URL"
 msgstr ""
 
-#: ../pages/page-options-settings.php:206
+#: ../pages/page-options-settings.php:205
 msgid "Meta Description"
 msgstr ""
 
-#: ../pages/page-options-settings.php:216
+#: ../pages/page-options-settings.php:215
 msgid "Meta Keywords"
 msgstr ""
 
-#: ../pages/page-options-settings.php:221
+#: ../pages/page-options-settings.php:220
 msgid "Comma separated list"
 msgstr ""
 
-#: ../pages/page-options-settings.php:227
+#: ../pages/page-options-settings.php:226
 msgid "Analytics Code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:232
+#: ../pages/page-options-settings.php:231
 msgid "Analytics tracking code"
 msgstr ""
 
-#: ../pages/page-options-settings.php:232
+#: ../pages/page-options-settings.php:231
 msgid "include"
 msgstr ""
 
-#: ../pages/page-options-settings.php:242
+#: ../pages/page-options-settings.php:241
 msgid "Filters"
 msgstr ""
 
-#: ../pages/page-options-settings.php:246
+#: ../pages/page-options-settings.php:245
 msgid "Unfiltered URLs"
 msgstr ""
 
-#: ../pages/page-options-settings.php:251
+#: ../pages/page-options-settings.php:250
 msgid ""
 "Each line should contain a relative URL you don't want the page shown on (e."
 "g. for http://mysite.com/mypage enter /mypage)"
 msgstr ""
 
-#: ../pages/page-options-settings.php:262
-#: ../pages/page-options-subscribers.php:191 ../pages/page-options.php:74
+#: ../pages/page-options-settings.php:261 ../pages/page-options.php:99
+#: ../pages/page-subscribers.php:75
 msgid "Plugin FAQ"
 msgstr ""
 
-#: ../pages/page-options-settings.php:264
-#: ../pages/page-options-subscribers.php:193 ../pages/page-options.php:76
-msgid "Contact"
-msgstr ""
-
-#: ../pages/page-options-settings.php:266
-#: ../pages/page-options-subscribers.php:195 ../pages/page-options.php:78
+#: ../pages/page-options-settings.php:263 ../pages/page-options.php:101
+#: ../pages/page-subscribers.php:77
 msgid "Rate Plugin"
 msgstr ""
 
-#: ../pages/page-options-settings.php:268
-#: ../pages/page-options-subscribers.php:197 ../pages/page-options.php:80
+#: ../pages/page-options-settings.php:265 ../pages/page-options.php:103
+#: ../pages/page-subscribers.php:79
 msgid "Donate"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:145
-msgid "Date"
+#: ../pages/page-options-settings.php:267 ../pages/page-options.php:105
+#: ../pages/page-subscribers.php:81
+msgid "Feature Request"
 msgstr ""
 
-#: ../pages/page-options-subscribers.php:146
-#: ../pages/page-options-subscribers.php:159
-#: ../pages/page-options-subscribers.php:163
-msgid "Delete"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:155
-msgid "unknown"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:162
-msgid "No"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:173
-msgid "Prev"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:174
-msgid "Page"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:174
-msgid "of"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:176
-msgid "Next"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:178
-msgid "CSV Export All"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:183
-msgid "Create an email list from subscribers"
-msgstr ""
-
-#: ../pages/page-options-subscribers.php:188
-msgid "Delete User?"
-msgstr ""
-
-#: ../pages/page-options.php:52
+#: ../pages/page-options.php:59
 msgid "Display"
 msgstr ""
 
-#: ../pages/page-options.php:53
+#: ../pages/page-options.php:60
 msgid "Content"
+msgstr ""
+
+#: ../pages/page-options.php:61
+msgid "Preview"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:139
+msgid "Date"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:140
+#: ../pages/page-subscribers-list-tab.php:153
+#: ../pages/page-subscribers-list-tab.php:157
+msgid "Delete"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:149
+msgid "unknown"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:156
+msgid "No"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:167
+msgid "Prev"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:168
+msgid "Page"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:168
+msgid "of"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:170
+msgid "Next"
+msgstr ""
+
+#: ../pages/page-subscribers-list-tab.php:178
+#: ../pages/page-subscribers-newsletter-tab.php:84
+msgid "Delete User?"
+msgstr ""
+
+#: ../pages/page-subscribers-newsletter-tab.php:69
+msgid "Save"
+msgstr ""
+
+#: ../pages/page-subscribers.php:44
+msgid "Subscriber Management"
+msgstr ""
+
+#: ../pages/page-subscribers.php:57
+msgid "Create Newsletter"
 msgstr ""

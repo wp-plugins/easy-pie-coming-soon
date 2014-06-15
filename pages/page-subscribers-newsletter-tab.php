@@ -34,10 +34,12 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
     .long-input { width: 345px;}
 
     #easy-pie-cs-postbox-inside { /* width: 550px;*/ }
+    #easy-pie-cs-postbox-inside h3 { font-size: 16px }
 
     #easy-pie-cs-delete-confirm { display:none; }
-    .ezp-cs-mail-provider { border: 1px solid lightgray;border-radius: 5px; box-shadow: 1px 7px 36px -5px rgba(34,34,34,1);  margin:15px; float:left; }
-    .ezp-cs-mail-provider img { width:175px;}
+    .ezp-cs-mail-provider {  margin:0px 15px 10px 15px; float:left; }
+    .ezp-cs-mail-provider a { text-decoration:none;}
+    .ezp-cs-mail-provider img { width:155px; border: 1px solid lightgray;border-radius: 5px; box-shadow: 1px 7px 36px -5px rgba(34,34,34,1);}
 
 </style>
 
@@ -63,16 +65,16 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
         <div class="postbox" style="margin-top:12px;" >
             <div class="inside" id="easy-pie-cs-postbox-inside" >
                 <h2>Create a newsletter using your subscriber list</h2>
-                <h3 style="margin-top:20px; margin-bottom:10px;">Step 1. Save subscriber list as a CSV file to your local hard drive.</h3>
-                <button style="margin:0px; font-size:1.3em; font-weight:bold;" id="btn-export" type="button" onclick="location.href = ajaxurl + '?action=EZP_CS_export_all_subscribers&_wpnonce=<?php echo $_wpnonce; ?>';
+                <h3 style="margin-top:25px; margin-bottom:10px;">Step 1. Save subscriber list as a CSV file to your local hard drive.</h3>
+                <button style="margin:0px; font-size:1.1em; font-weight:bold;" id="btn-export" type="button" onclick="location.href = ajaxurl + '?action=EZP_CS_export_all_subscribers&_wpnonce=<?php echo $_wpnonce; ?>';
                         return false;"><?php EZP_CS_Utility::_e('Save'); ?></button>
-                <h3 style="margin-top:30px;margin-bottom:10px;">Step 2. Import CSV file into an email marketing service.</h3>
+                <h3 style="margin-top:40px;margin-bottom:10px;">Step 2. Import CSV file into an email marketing service.</h3>
                 <p>Import the saved CSV file into one of the following providers or use your own.</p>
-                <div style="height:115px">
-                    <div class='ezp-cs-mail-provider'><a href="http://easypie.aweber.com" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/aweber-200.png'?> "/></a></div>
-                    <div class='ezp-cs-mail-provider'><a href="http://www.getresponse.com/index/rsriley" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/getresponse-200.png'?> "/></a></div>
-                    <div class='ezp-cs-mail-provider'><a href="https://madmimi.com/s/rt8j" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/mad-mimi2-200.png'?> "/></a></div>
-                    <div class='ezp-cs-mail-provider' style="clear:right"><a href="http://eepurl.com/Usgp5" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/mailchimp-200.png'?> "/></a></div>
+                <div style="height:100px">
+                    <div class='ezp-cs-mail-provider' style="margin-left:0px;"><a href="http://easypiewp.com/aweber" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/aweber-200.png'?> "/></a></div>
+                    <div class='ezp-cs-mail-provider'><a href="http://easypiewp.com/getresponse" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/getresponse-200.png'?> "/></a></div>
+                    <div class='ezp-cs-mail-provider'><a href="http://easypiewp.com/MadMimi" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/mad-mimi2-200.png'?> "/></a></div>
+                    <div class='ezp-cs-mail-provider' style="clear:right"><a href="http://easypiewp.com/mailchimp" target="_blank"><img src="<?php echo EZP_CS_Utility::$PLUGIN_URL . '/images/affiliates/mailchimp-200.png'?> "/></a></div>
                 </div>
             </div>
             <p style="margin-left:8px;margin-top:10px;font-style:italic; clear:both">

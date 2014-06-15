@@ -79,6 +79,11 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 0.5.6 =
+* Moved preview onto third template tab
+* Added save and preview button to improve page design speed
+* Improved workflow of subscriber list
+
 = 0.5.4 =
 * Added countdown timer.
 * Can now disable Coming Soon for user-specified URLs.
@@ -99,6 +104,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Upgrade Notice ==
 
+= 0.5.6 =
+Includes minor bug fixes and usability improvements. Note that Coming Soon Page preview has been moved to the third template tab. 
+ 
 = 0.5.4 =
 Added countdown timer. Also added ability to disable Coming Soon Page for specific site URLs. Additionally, made a few minor tweaks.
 

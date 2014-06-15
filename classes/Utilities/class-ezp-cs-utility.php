@@ -279,7 +279,7 @@ if (!class_exists('EZP_CS_Utility')) {
         {
            $text = '';
             
-           if(time() < strtotime('5 July 2014')) 
+           if(time() < strtotime('8 July 2014')) 
            {
                $r = rand(0, 1);
                

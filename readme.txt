@@ -79,7 +79,7 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
-=0.5.8=
+= 0.5.8 =
 * Small tweaks
 * Upped WordPress compatibility to 3.9.2
 

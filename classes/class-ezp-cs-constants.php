@@ -32,7 +32,7 @@ if (!class_exists('EZP_CS_Constants')) {
         const COMPOUND_OPTION_NAME = 'easy-pie-cs-options';
         const MAIN_PAGE_KEY = 'easy-pie-cs-main-page';
         const PLUGIN_SLUG = 'easy-pie-coming-soon';
-        const PLUGIN_VERSION = "0.5.6"; // RSR Version
+        const PLUGIN_VERSION = "0.5.8"; // RSR Version
         
 
         
@@ -44,6 +44,7 @@ if (!class_exists('EZP_CS_Constants')) {
         public static $SETTINGS_SUBMENU_SLUG;
         public static $SUBSCRIBERS_SUBMENU_SLUG;
         public static $PREVIEW_SUBMENU_SLUG;
+        public static $COMING_SOON_PRO_SUBMENU_SLUG;
 
         public static function init() {
 
@@ -55,6 +56,7 @@ if (!class_exists('EZP_CS_Constants')) {
             self::$SETTINGS_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-settings';
             self::$SUBSCRIBERS_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-subscribers';            
             self::$PREVIEW_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-view';            
+            self::$COMING_SOON_PRO_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-coming-soon-pro';
         }
 
     }

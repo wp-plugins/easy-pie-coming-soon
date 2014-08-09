@@ -3,7 +3,7 @@ Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
 Requires at least: 3.5
-Tested up to: 3.9.1
+Tested up to: 3.9.2
 Stable tag: 0.5.6
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -79,6 +79,10 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+=0.5.8=
+* Small tweaks
+* Upped WordPress compatibility to 3.9.2
+
 = 0.5.6 =
 * Moved preview onto third template tab
 * Added save and preview button to improve page design speed
@@ -103,6 +107,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.5.8 =
+Small tweaks, upped WordPress compatibility to 3.9.2
 
 = 0.5.6 =
 Includes minor bug fixes and usability improvements. Note that Coming Soon Page preview has been moved to the third template tab. 

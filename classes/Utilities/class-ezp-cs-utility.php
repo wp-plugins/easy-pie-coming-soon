@@ -301,6 +301,33 @@ if (!class_exists('EZP_CS_Utility')) {
            
            return $text;
         }
+        
+        public static function append_query_value($url, $key, $value)
+        {
+            $separator = (parse_url($url, PHP_URL_QUERY) == NULL) ? '?' : '&';
+
+            $modified_url = $url . "$separator$key=$value";
+
+            return $modified_url;
+        }
+        
+        public static function echo_footer_links()
+        {
+            
+            $faq_text = __('FAQ');
+            $contact_text = __('Contact');
+                    
+            $coming_soon_pro_url = menu_page_url(EZP_CS_Constants::$COMING_SOON_PRO_SUBMENU_SLUG, false);
+            
+            $after_launch_text = __('After Launch');
+            $after_launch_url = menu_page_url(EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG, false);
+            $after_launch_url = self::append_query_value($after_launch_url, 'tab', 'leadwatch');
+                        
+            echo "<a href='http://easypiewp.com/easy-pie-coming-soon-faq' target='_blank'>$faq_text</a> | ";
+            echo "<a href='http://easypiewp.com/about/' target='_blank'>$contact_text</a> | ";
+            echo "<a href='$coming_soon_pro_url' target='_blank'>Coming Soon Pro</a> | ";
+            echo "<a href='$after_launch_url'>$after_launch_text</a>";
+        }
     }
 
     EZP_CS_Utility::init();

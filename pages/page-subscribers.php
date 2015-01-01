@@ -55,6 +55,7 @@ if (isset($_GET['tab'])) {
         <h2 class="nav-tab-wrapper">
             <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=list' ?>" class="nav-tab <?php echo $active_tab == 'list' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Subscribers'); ?></a>  
             <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=newsletter' ?>" class="nav-tab <?php echo $active_tab == 'newsletter' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Create Newsletter'); ?></a>  
+            <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=leadwatch' ?>" class="nav-tab <?php echo $active_tab == 'leadwatch' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('After Launch'); ?></a> 
         </h2>
         <form id="easy-pie-cs-main-form" method="post" action="<?php echo admin_url('admin.php?page=' . EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=' . $active_tab); ?>" > 
             <?php
@@ -66,23 +67,23 @@ if (isset($_GET['tab'])) {
                 <?php
                 if ($active_tab == 'list') {
                     include 'page-subscribers-list-tab.php';
-                } else {
+                } 
+                else if($active_tab == 'newsletter')
+                {
                     include 'page-subscribers-newsletter-tab.php';
+                }
+                else
+                {
+                    include 'page-subscribers-lead-watch-tab.php';
                 }
                 ?>         
             </div>             
-
-            <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('FAQ'); ?></a>
-            |
-            <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate'); ?></a>
-            |            
-            <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
-            |
-            <a href="http://easypiewp.com/about/" target="_blank"><?php EZP_CS_Utility::_e('Contact') ?></a>
-            |
-            <a href="<?php echo admin_url() . 'admin.php?page=' . EZP_CS_Constants::$COMING_SOON_PRO_SUBMENU_SLUG ?>">Coming Soon Pro</a>
-            
+        
+            <?php EZP_CS_Utility::echo_footer_links(); ?>
         </form>
+        
+        
+        
     </div>
 </div>
 

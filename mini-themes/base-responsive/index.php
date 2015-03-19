@@ -144,7 +144,7 @@ echo "
             #email-collection-box { display:$email_display; }
             #name-form-group { display:$name_display; }
             #email-form-group { margin-left:auto;margin-right:auto;}
-            #email-form-group, #name-form-group { width: 180px; }
+            /*#email-form-group, #name-form-group { width: 180px; }*/
             /* #name-input, #email-input { width: 180px; } */
                 
             #initial-section { display:$initial_section_display; }
@@ -198,11 +198,11 @@ echo "
                         <div id="name-form-group" class="form-group">
                             <label class="sr-only" for="ezp_cs_name"><?php EZP_CS_Utility::_e("Name"); ?></label>
                             <!-- Setting: {{name-placeholder}}-->
-                            <input id="name-input" name="ezp_cs_name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
+                            <input required id="name-input" name="ezp_cs_name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
                         </div>
                         <div id="email-form-group" class="form-group">
                             <label class="sr-only" for="ezp_cs_email"><?php EZP_CS_Utility::_e("Email"); ?></label>                            
-                            <input id="email-input" name="ezp_cs_email" type="email" class="form-control" placeholder="<?php echo $content->email_placeholder_text; ?>"/>
+                            <input required id="email-input" name="ezp_cs_email" type="email" class="form-control" placeholder="<?php echo $content->email_placeholder_text; ?>"/>
                         </div>
 
                         <button id="email-submit-button" form="email-collection-box" type="submit" class="btn btn-danger"><?php echo $content->email_button_text; ?></button>                        

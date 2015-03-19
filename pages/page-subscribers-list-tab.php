@@ -169,12 +169,11 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
                     <button id="btn-next" <?php echo $next_disabled; ?> name="submit" type="submit" value="next" onclick="window.location = '<?php echo $next_url; ?>';
                             return false;"><?php EZP_CS_Utility::_e("Next"); ?><span style='float:right; margin-top:1px' class="ui-icon ui-icon-triangle-1-e"></span></button>
 
-                </div>
-                <!-- RSR TODO: time box; TODO: random wording -->
-                <?php echo EZP_CS_Utility::get_coupon_text(); ?>                
+                </div> 
+                <p style="margin-top:17px; text-align:center;"><?php DUP_PRO_U::_e('Want to auto-sync to MailChimp?'); ?> Try <a target="_blank" href="http://easypiewp.com">Coming Soon Page Elite</a></p>
             </div>
         </div>
     </div>
     <div id="easy-pie-cs-delete-confirm" title="<?php EZP_CS_Utility::_e('Delete User?'); ?>" >
-        <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><span id='easy-pie-cs-delete-confirm-text'></span></p>
+        <p style="margin-top:17px; margin-bottom:-5px!important"><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span><span id='easy-pie-cs-delete-confirm-text'></span></p>
     </div>         

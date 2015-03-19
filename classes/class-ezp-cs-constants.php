@@ -44,7 +44,7 @@ if (!class_exists('EZP_CS_Constants')) {
         public static $SETTINGS_SUBMENU_SLUG;
         public static $SUBSCRIBERS_SUBMENU_SLUG;
         public static $PREVIEW_SUBMENU_SLUG;
-        public static $COMING_SOON_PRO_SUBMENU_SLUG;
+        public static $COMING_SOON_PAGE_ELITE_SUBMENU_SLUG;
 
         public static function init() {
 
@@ -56,7 +56,7 @@ if (!class_exists('EZP_CS_Constants')) {
             self::$SETTINGS_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-settings';
             self::$SUBSCRIBERS_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-subscribers';            
             self::$PREVIEW_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-view';            
-            self::$COMING_SOON_PRO_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-coming-soon-pro';
+            self::$COMING_SOON_PAGE_ELITE_SUBMENU_SLUG = EZP_CS_Constants::PLUGIN_SLUG . '-coming-soon-page-elite';
         }
 
     }

@@ -266,7 +266,7 @@
             |
             <a href="http://easypiewp.com/about/" target="_blank"><?php EZP_CS_Utility::_e('Contact') ?></a>
             |
-            <a href="<?php echo admin_url() . 'admin.php?page=' . EZP_CS_Constants::$COMING_SOON_PRO_SUBMENU_SLUG ?>">Coming Soon Pro</a>
+            <a href="http://easypiewp.com" target="_blank">Coming Soon Page ELITE</a>
         </form>
     </div>
 </div>

@@ -467,7 +467,7 @@ if (!class_exists('EZP_CS')) {
             $template_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Template'), $this->__('Template'), $perms, EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG, array($this, 'display_template_options_page'));
             $settings_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Settings'), $this->__('Settings'), $perms, EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG, array($this, 'display_settings_options_page'));
             $subscribers_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Subscribers'), $this->__('Subscribers'), $perms, EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG, array($this, 'display_subscribers_options_page'));
-            $coming_soon_pro_page_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Coming Soon Pro'), $this->__('Coming Soon Pro'), $perms, EZP_CS_Constants::$COMING_SOON_PRO_SUBMENU_SLUG, array($this, 'display_coming_soon_pro_page'));
+            $coming_soon_page_elite_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Coming Soon Page ELITE'), $this->__('Go Pro!'), $perms, EZP_CS_Constants::$COMING_SOON_PAGE_ELITE_SUBMENU_SLUG, array($this, 'display_coming_soon_page_elite_page'));
         //    $preview_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Preview'), $this->__('Preview'), $perms, EZP_CS_Constants::$PREVIEW_SUBMENU_SLUG, array($this, 'display_preview_page'));
 
             add_action('admin_print_scripts-' . $template_page_hook_suffix, array($this, 'enqueue_scripts'));
@@ -503,8 +503,8 @@ if (!class_exists('EZP_CS')) {
             $this->display_options_page('page-subscribers.php');
         }
         
-        function display_coming_soon_pro_page() {
-            $this->display_options_page('page-coming-soon-pro.php');
+        function display_coming_soon_page_elite_page() {
+            $this->display_options_page('page-coming-soon-page-elite.php');
         }
 
         function display_preview_page() {

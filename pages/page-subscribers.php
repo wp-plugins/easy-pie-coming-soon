@@ -55,7 +55,6 @@ if (isset($_GET['tab'])) {
         <h2 class="nav-tab-wrapper">
             <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=list' ?>" class="nav-tab <?php echo $active_tab == 'list' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Subscribers'); ?></a>  
             <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=newsletter' ?>" class="nav-tab <?php echo $active_tab == 'newsletter' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('Create Newsletter'); ?></a>  
-            <a href="?page=<?php echo EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=leadwatch' ?>" class="nav-tab <?php echo $active_tab == 'leadwatch' ? 'nav-tab-active' : ''; ?>"><?php EZP_CS_Utility::_e('After Launch'); ?></a> 
         </h2>
         <form id="easy-pie-cs-main-form" method="post" action="<?php echo admin_url('admin.php?page=' . EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG . '&tab=' . $active_tab); ?>" > 
             <?php
@@ -68,14 +67,10 @@ if (isset($_GET['tab'])) {
                 if ($active_tab == 'list') {
                     include 'page-subscribers-list-tab.php';
                 } 
-                else if($active_tab == 'newsletter')
-                {
-                    include 'page-subscribers-newsletter-tab.php';
-                }
                 else
                 {
-                    include 'page-subscribers-lead-watch-tab.php';
-                }
+                    include 'page-subscribers-newsletter-tab.php';
+                } 
                 ?>         
             </div>             
         

@@ -65,7 +65,7 @@ if (!class_exists('EZP_CS_Utility')) {
             echo htmlspecialchars($text);
         }
 
-        public function get_db_type_format($variable) {
+        public static function get_db_type_format($variable) {
 
             $type_string = gettype($variable);
 

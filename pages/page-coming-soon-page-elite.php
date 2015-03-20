@@ -2,18 +2,20 @@
 <style>
     #post-1470 { background-color: rgb(238, 238, 238);}
     h1.entry-title { display:none; }
-    table.cspe-pricing td { vertical-align:top;  height: 20px;padding: 5px; width: 220px; }
+    table.cspe-pricing td { vertical-align:top;  height: 20px;padding-left: 23px; width: 220px; }
     table.cspe-pricing th { text-align:left; font-size: 2em; font-weight:bold; height: 20px;padding: 5px; width: 200px; }
     table.cspe-pricing { margin-left:auto; margin-right: auto; }
     .elite { color:rgb(71, 166, 70); font-style:italic}        
     li.elite { font-weight:bold; }
-    #screenshot-table { margin-bottom:20px;}
+    #screenshot-table { margin-bottom:20px; margin-left:auto; margin-right:auto}
     #screenshot-table tr td { text-align:center; padding:10px; }
-    #screenshot-table img { width:70%; }
-    .stylebox { background-color:white; border:1px solid #ddd;-webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777; padding: 19px;  margin-top: 46px;width:900px}
+    /*#screenshot-table img { width:70%; }*/
+    .stylebox { background-color:white; border:1px solid #ddd;-webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777; padding: 19px;  margin-top: 46px;width:80%}
     .box-heading { font-size:3.5em; text-align:center; color: rgb(65, 123, 64);}
     .cspe-button { width:103px; margin-left:auto; margin-right:auto; display:block; display:block;text-decoration:none!important; text-align:center; padding:20px; font-size:1.6em; background-color:red; border-radius:5px;-webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777;}
     .cspe-button, .cspe-button:hover, .cspe-button:active, .cspe-button:visited { color:white!important;}
+    table.cspe-pricing tr td ul  { list-style-type: circle!important;}
+    table.cspe-pricing tr td ul li { line-height: 2em!important;}
 </style>
 <div class="stylebox" >
     <p style="font-size:1.5em;text-align:center;margin-bottom:10px">The Best Coming Soon Plugin on WordPress.org has been transformed.</p>
@@ -73,7 +75,7 @@
                     <li>Preview from Admin panel</li>
                     <li>Choose 503 or 200 HTTP status</li>
                     <li>Selectively allow viewing certain URLs</li>
-                    <li class="elite">Give people site access via different keyed URLs. Allows cutting off one group while allowing another continued access.</li>
+                    <li class="elite">Give people site access via special URLs. Allows cutting off one group while another still has access.</li>
                 </ul>
             </td>
         </tr>

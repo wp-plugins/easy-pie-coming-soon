@@ -79,7 +79,7 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
-= 0.6.1=
+= 0.6.1 =
 * Fixed small formatting problem
 
 = 0.6.0 =

@@ -170,7 +170,7 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
                             return false;"><?php EZP_CS_Utility::_e("Next"); ?><span style='float:right; margin-top:1px' class="ui-icon ui-icon-triangle-1-e"></span></button>
 
                 </div> 
-                <p style="margin-top:17px; text-align:center;"><?php DUP_PRO_U::_e('Want to auto-sync to MailChimp?'); ?> Try <a target="_blank" href="http://easypiewp.com">Coming Soon Page Elite</a></p>
+                <p style="margin-top:17px; text-align:center;"><?php EZP_CS_Utility::_e('Want to auto-sync to MailChimp?'); ?> Try <a target="_blank" href="http://easypiewp.com">Coming Soon Page Elite</a></p>
             </div>
         </div>
     </div>

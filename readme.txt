@@ -79,6 +79,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 0.6.1=
+* Fixed small formatting problem
+
 = 0.6.0 =
 * Small tweaks
 
@@ -110,6 +113,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.1 =
+Fixed small formatting problem
 
 = 0.6.0 =
 Small tweaks

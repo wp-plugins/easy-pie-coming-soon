@@ -11,7 +11,7 @@
     #screenshot-table tr td { text-align:center; padding:10px; }
     /*#screenshot-table img { width:70%; }*/
     .stylebox { background-color:white; border:1px solid #ddd;-webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777; padding: 19px;  margin-top: 46px;width:80%}
-    .box-heading { font-size:3.5em; text-align:center; color: rgb(65, 123, 64);}
+    .box-heading { font-size:2.5em; text-align:center;}
     .cspe-button { width:103px; margin-left:auto; margin-right:auto; display:block; display:block;text-decoration:none!important; text-align:center; padding:20px; font-size:1.6em; background-color:red; border-radius:5px;-webkit-box-shadow: 0 10px 6px -6px #777; -moz-box-shadow: 0 10px 6px -6px #777; box-shadow: 0 10px 6px -6px #777;}
     .cspe-button, .cspe-button:hover, .cspe-button:active, .cspe-button:visited { color:white!important;}
     table.cspe-pricing tr td ul  { list-style-type: circle!important;}
@@ -28,10 +28,7 @@
             </tr>
         </table>
     </div>
-    <a target=_blank" style="margin-top:29px; margin-bottom:45px;" class="cspe-button" href="http://easypiewp.com#easy-pie-cspe-ordering" class="cspe-button"><?php EZP_CS_Utility::_e('Buy Now!'); ?></a>
-    <hr/>
-    <p style="margin-top:15px;" class="box-heading">Features</p>
-    <table class="cspe-pricing" style="margin-bottom:50px">
+    <table class="cspe-pricing" style="margin-bottom:50px; margin-top:65px;">
         <tr>
             <th>Emails</th>
             <th>Social</th>
@@ -64,6 +61,7 @@
                     <li>Add your own logo</li>
                     <li>Use built-in backgrounds or your own</li>
                     <li class="elite">New built-in backgrounds</li>
+                    <li class="elite">Google Fonts (soon)</li>
                 </ul>
             </td>
             <td>
@@ -80,8 +78,9 @@
             </td>
         </tr>
     </table>
-    <p class="elite">*Features only available in Elite, not Coming Soon Page standard</p>
-    <hr/>
-    <a target="_blank" style="margin-top:45px; margin-bottom:24px;" class="cspe-button" href="http://easypiewp.com#easy-pie-cspe-ordering" class="cspe-button"><?php EZP_CS_Utility::_e('Buy Now!'); ?></a>
+   
+    
+    <p class="box-heading"><a target="_blank" style="color: rgb(236, 36, 36); margin-top:45px; margin-bottom:24px;" href="http://easypiewp.com">See The Latest Feature Set*</a></p>
+    <p style="margin-top:50px">*Coming Soon Page: Elite is under active development so above feature list may not be complete.</p>
 </div>
 

@@ -79,6 +79,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 0.6.3 =
+* Fixed bug involving name being a required field (Thanks tomtc)
+
 = 0.6.2 =
 * Fixed typo introduced in 0.6.1 causing fatal error on subscriber list screen. (Thanks Paris Le-Tayo for reporting!)
 
@@ -116,6 +119,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.3 =
+Fixed bug involving name being a required field (Thanks tomtc)
 
 = 0.6.2 =
 Fixed typo introduced in 0.6.1 causing fatal error on subscriber list screen. (Thanks Paris Le-Tayo for reporting!)

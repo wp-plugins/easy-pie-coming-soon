@@ -198,7 +198,7 @@ echo "
                         <div id="name-form-group" class="form-group">
                             <label class="sr-only" for="ezp_cs_name"><?php EZP_CS_Utility::_e("Name"); ?></label>
                             <!-- Setting: {{name-placeholder}}-->
-                            <input required id="name-input" name="ezp_cs_name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
+                            <input id="name-input" name="ezp_cs_name" type="text" class="form-control" placeholder="<?php echo $content->name_placeholder_text; ?>"/>
                         </div>
                         <div id="email-form-group" class="form-group">
                             <label class="sr-only" for="ezp_cs_email"><?php EZP_CS_Utility::_e("Email"); ?></label>                            

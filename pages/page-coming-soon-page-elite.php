@@ -80,7 +80,7 @@
     </table>
    
     
-    <p class="box-heading"><a target="_blank" style="color: rgb(236, 36, 36); margin-top:45px; margin-bottom:24px;" href="http://easypiewp.com">See The Latest Feature Set*</a></p>
-    <p style="margin-top:50px">*Coming Soon Page: Elite is under active development so above feature list may not be complete.</p>
+    <p class="box-heading"><a target="_blank" style="color: rgb(236, 36, 36); margin-top:45px; margin-bottom:24px;" href="http://easypiewp.com">Get Elite Now! *</a></p>
+    <p style="margin-top:50px">*Coming Soon Page: Elite is under active development so product may have more features than indicated above.</p>
 </div>
 

@@ -1,5 +1,6 @@
 <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'/>
 <style>
+    th i { margin-right: 7px }; 
     #post-1470 { background-color: rgb(238, 238, 238);}
     h1.entry-title { display:none; }
     table.cspe-pricing td { vertical-align:top;  height: 20px;padding-left: 23px; width: 220px; }
@@ -30,17 +31,17 @@
     </div>
     <table class="cspe-pricing" style="margin-bottom:50px; margin-top:65px;">
         <tr>
-            <th>Emails</th>
-            <th>Social</th>
-            <th>Visuals</th>
-            <th>Experience</th>
+            <th style="color: rgb(232, 0, 0);"><i class="fa fa-envelope"></i>Emails</th>
+            <th style="color: #3b5998;"><i class="fa fa-facebook-square"></i>Social</th>
+            <th style="color: rgb(186, 186, 36)"><i class="fa fa-eye"></i>Visuals</th>
+            <th style="color: rgb(12, 158, 25);"><i class="fa fa-bolt"></i>Experience</th>
         </tr>
         <tr>
             <td>
                 <ul>
-                    <li>Collect emails via simple form</li>
-                    <li>CSV export of email list</li>
-                    <li class="elite">MailChimp Integration</li>
+                    <li>Collect emails</li>
+                    <li>CSV export of emails</li>
+                    <li class="elite">MailChimp AutoSync</li>
             </td>
             <td>
                 <ul>
@@ -73,7 +74,7 @@
                     <li>Preview from Admin panel</li>
                     <li>Choose 503 or 200 HTTP status</li>
                     <li>Selectively allow viewing certain URLs</li>
-                    <li class="elite">Give people site access via special URLs. Allows cutting off one group while another still has access.</li>
+                    <li class="elite">Give site access via special URLs. Allows cutting off one group while giving another access.</li>
                 </ul>
             </td>
         </tr>
@@ -83,4 +84,4 @@
     <p class="box-heading"><a target="_blank" style="color: rgb(236, 36, 36); margin-top:45px; margin-bottom:24px;" href="http://easypiewp.com">Get Elite Now! *</a></p>
     <p style="margin-top:50px">*Coming Soon Page: Elite is under active development so product may have more features than indicated above.</p>
 </div>
-
+    

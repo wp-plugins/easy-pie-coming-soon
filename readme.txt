@@ -79,6 +79,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 0.6.4 =
+* Small UI tweaks
+
 = 0.6.3 =
 * Fixed bug involving name being a required field (Thanks tomtc)
 
@@ -119,6 +122,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 0.6.4 =
+Small UI tweaks
 
 = 0.6.3 =
 Fixed bug involving name being a required field (Thanks tomtc)

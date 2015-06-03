@@ -1,5 +1,4 @@
 <?php
-
 /*
   Easy Pie Coming Soon Plugin
   Copyright (C) 2014, Synthetic Thought LLC
@@ -34,18 +33,20 @@ require_once('class-ezp-cs-constants.php');
 require_once(dirname(__FILE__) . '/Utilities/class-ezp-cs-render-utility.php');
 require_once(dirname(__FILE__) . '/Utilities/class-ezp-cs-test-utility.php');
 
-if (!class_exists('EZP_CS')) {
+if (!class_exists('EZP_CS'))
+{
 
     /**
      * @author Bob Riley <bob@easypiewp.com>
      * @copyright 2014 Synthetic Thought LLC
      */
-    class EZP_CS extends EZP_CS_Plugin_Base {
-
+    class EZP_CS extends EZP_CS_Plugin_Base
+    {
         /**
          * Constructor
          */
-        function __construct($plugin_file_path) {
+        function __construct($plugin_file_path)
+        {
 
             parent::__construct(EZP_CS_Constants::PLUGIN_SLUG);
 
@@ -53,7 +54,8 @@ if (!class_exists('EZP_CS')) {
 
             $entity_table_present = EZP_CS_Query_Utility::is_table_present(EZP_CS_JSON_Entity_Base::DEFAULT_TABLE_NAME);
 
-            if ($entity_table_present) {
+            if ($entity_table_present)
+            {
 
                 $global = EZP_CS_Global_Entity::get_instance();
 
@@ -62,7 +64,9 @@ if (!class_exists('EZP_CS')) {
                 $coming_soon_mode_on = $config->coming_soon_mode_on;
 
                 $in_preview = isset($_REQUEST['ezp_cs_preview']) && ($_REQUEST['ezp_cs_preview'] == 'true');
-            } else {
+            }
+            else
+            {
 
                 // On activation so we don't have the tables yet
                 $coming_soon_mode_on = false;
@@ -70,11 +74,13 @@ if (!class_exists('EZP_CS')) {
             }
 
             // RSR TODO - is_admin() just says if admin panel is attempting to be displayed - NOT to see if someone is an admin
-            if (is_admin() && !$in_preview) {
+            if (is_admin() && !$in_preview)
+            {
 
                 //EZP_CS_Utility::debug("admin true");
 
-                if ($coming_soon_mode_on) {
+                if ($coming_soon_mode_on)
+                {
 
                     $this->add_class_action("admin_notices", "display_admin_notice");
                 }
@@ -95,23 +101,29 @@ if (!class_exists('EZP_CS')) {
                 $this->add_class_action('wp_ajax_EZP_CS_test', 'ws_test');
 
                 $this->add_class_action('wp_ajax_EZP_CS_copy_template', 'ws_copy_template');
-            } else {
+            }
+            else
+            {
 
                 //EZP_CS_Utility::debug("admin false");
-                if ($coming_soon_mode_on || $in_preview) {
+                if ($coming_soon_mode_on || $in_preview)
+                {
                     EZP_CS_Utility::debug("displaying coming soon page");
                     $this->add_class_action('template_redirect', 'display_coming_soon_page');
                 }
             }
         }
 
-        function ws_export_all_subscribers() {
+        function ws_export_all_subscribers()
+        {
 
-            if (isset($_REQUEST['_wpnonce'])) {
+            if (isset($_REQUEST['_wpnonce']))
+            {
 
                 $_wpnonce = $_REQUEST['_wpnonce'];
 
-                if (wp_verify_nonce($_wpnonce, 'easy-pie-cs-change-subscribers')) {
+                if (wp_verify_nonce($_wpnonce, 'easy-pie-cs-change-subscribers'))
+                {
 
                     header("Pragma: public");
                     header("Expires: 0");
@@ -124,12 +136,16 @@ if (!class_exists('EZP_CS')) {
                     $subscribers = EZP_CS_Query_Utility::get_subscriber_list(-1);
 
                     echo "Name, Email Address, Date\r\n";
-                    foreach ($subscribers as $subscriber) {
+                    foreach ($subscribers as $subscriber)
+                    {
 
-                        if ($subscriber->subscription_date != '') {
+                        if ($subscriber->subscription_date != '')
+                        {
                             //   $localized_date = date_i18n(get_option('date_format'), strtotime($subscriber->subscription_date));
                             $date_text = date('n/j/Y', strtotime($subscriber->subscription_date));
-                        } else {
+                        }
+                        else
+                        {
                             //   $localized_date = '';
                             $date_text = '';
                         }
@@ -138,52 +154,69 @@ if (!class_exists('EZP_CS')) {
                     }
 
                     exit;
-                } else {
+                }
+                else
+                {
 
                     EZP_CS_Utility::debug("ws_export_all_subscribers: Security violation. Nonce doesn't properly match!");
                 }
-            } else {
+            }
+            else
+            {
 
                 EZP_CS_Utility::debug("ws_export_all_subscribers: Security violation. Nonce doesn't exist!");
             }
         }
 
-        function ws_purge_contact() {
+        function ws_purge_contact()
+        {
             $request = stripslashes_deep($_REQUEST);
 
-            if (isset($request['_wpnonce'])) {
+            if (isset($request['_wpnonce']))
+            {
 
                 $_wpnonce = $request['_wpnonce'];
 
-                if (wp_verify_nonce($_wpnonce, 'easy-pie-cs-change-subscribers')) {
+                if (wp_verify_nonce($_wpnonce, 'easy-pie-cs-change-subscribers'))
+                {
 
-                    if (isset($request['contact_id'])) {
+                    if (isset($request['contact_id']))
+                    {
 
                         $contact_id = $request['contact_id'];
 
                         EZP_Contact_Entity::delete_by_id($contact_id);
-                    } else {
+                    }
+                    else
+                    {
                         EZP_CS_Utility::debug("ws_purge_contact: contact id not set");
                     }
-                } else {
+                }
+                else
+                {
 
                     EZP_CS_Utility::debug("ws_purge_contact: Security violation. Nonce doesn't properly match!");
                 }
-            } else {
+            }
+            else
+            {
 
                 EZP_CS_Utility::debug("ws_purge_contact: Security violation. Nonce doesn't exist!");
             }
         }
 
-        function ws_test() {
+        function ws_test()
+        {
 
             $post = stripslashes_deep($_POST);
 
-            if (isset($post['type'])) {
+            if (isset($post['type']))
+            {
 
                 $type = $post['type'];
 
-                switch ($type) {
+                switch ($type)
+                {
                     case 'add_subscribers':
                         EZP_CS_Test_Utility::add_test_subscribers($post);
                         break;
@@ -219,11 +252,13 @@ if (!class_exists('EZP_CS')) {
 //            }
 //        }
 
-        function ws_copy_template() {
+        function ws_copy_template()
+        {
 
             $post = stripslashes_deep($_POST);
 
-            if (isset($post['template_key'])) {
+            if (isset($post['template_key']))
+            {
 
                 $template_key = $post['template_key'];
 
@@ -248,26 +283,31 @@ if (!class_exists('EZP_CS')) {
             }
         }
 
-        function add_class_action($tag, $method_name) {
+        function add_class_action($tag, $method_name)
+        {
 
             return add_action($tag, array($this, $method_name));
         }
 
-        function add_class_filter($tag, $method_name) {
+        function add_class_filter($tag, $method_name)
+        {
 
             return add_filter($tag, array($this, $method_name));
         }
 
-        public function display_admin_notice() {
+        public function display_admin_notice()
+        {
 
             $display_notice = true;
 
-            if (isset($_REQUEST['page']) && (strpos($_REQUEST['page'], EZP_CS_Constants::PLUGIN_SLUG) === 0)) {
+            if (isset($_REQUEST['page']) && (strpos($_REQUEST['page'], EZP_CS_Constants::PLUGIN_SLUG) === 0))
+            {
 
                 $display_notice = false;
             }
 
-            if ($display_notice) {
+            if ($display_notice)
+            {
 
                 //echo "<div class='error'><a href='" . admin_url() . "admin.php?page=" . EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG . "'>" . $this->__("Coming Soon is On") . "</a></div>";                                
                 EZP_CS_Utility::display_admin_notice(true);
@@ -277,7 +317,8 @@ if (!class_exists('EZP_CS')) {
         /**
          * Display the maintenance page
          */
-        public function display_coming_soon_page() {
+        public function display_coming_soon_page()
+        {
             $global = EZP_CS_Global_Entity::get_instance();
 
             $set_index = $global->active_set_index;
@@ -288,22 +329,29 @@ if (!class_exists('EZP_CS')) {
 
             $in_preview = isset($_REQUEST['ezp_cs_preview']) && ($_REQUEST['ezp_cs_preview'] == 'true');
 
-            if(trim($config->unfiltered_urls) != "") {
-                
+            if (trim($config->unfiltered_urls) != "")
+            {
+
                 $is_unfiltered = EZP_CS_Utility::is_current_url_unfiltered($config);
-            } else {
-                
+            }
+            else
+            {
+
                 $is_unfiltered = false;
             }
 
-            if (!$is_unfiltered && (!is_user_logged_in() || $in_preview)) {
+            if (!$is_unfiltered && (!is_user_logged_in() || $in_preview))
+            {
 
-                if ($config->return_code == 503) {
+                if ($config->return_code == 503)
+                {
 
                     header('HTTP/1.1 503 Service Temporarily Unavailable');
                     header('Status: 503 Service Temporarily Unavailable');
                     header('Retry-After: 86400'); // RSR TODO: Put in the retry time later
-                } else {
+                }
+                else
+                {
 
                     header('HTTP/1.1 200 OK');
                 }
@@ -322,7 +370,8 @@ if (!class_exists('EZP_CS')) {
         }
 
         // <editor-fold defaultstate="collapsed" desc="Hook Handlers">
-        public static function activate() {
+        public static function activate()
+        {
 
             EZP_CS_Utility::debug("activate");
 
@@ -342,19 +391,22 @@ if (!class_exists('EZP_CS')) {
             }
         }
 
-        public static function deactivate() {
+        public static function deactivate()
+        {
 
             EZP_CS_Utility::debug("deactivate");
         }
 
-        public static function uninstall() {
+        public static function uninstall()
+        {
 
             EZP_CS_Utility::debug("uninstall");
         }
 
         // </editor-fold>
 
-        public function enqueue_scripts() {
+        public function enqueue_scripts()
+        {
 
             $jsRoot = plugins_url() . "/" . EZP_CS_Constants::PLUGIN_SLUG . "/js";
 
@@ -363,25 +415,30 @@ if (!class_exists('EZP_CS')) {
 
             $jQueryPluginRoot = plugins_url() . "/" . EZP_CS_Constants::PLUGIN_SLUG . "/jquery-plugins";
 
-            if (isset($_GET['page'])) {
+            if (isset($_GET['page']))
+            {
 
 
-                if ($_GET['page'] == EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG) {
+                if ($_GET['page'] == EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG)
+                {
 
-                    if (!isset($_GET['tab']) || ($_GET['tab'] == 'display')) {
+                    if (!isset($_GET['tab']) || ($_GET['tab'] == 'display'))
+                    {
 
 
                         wp_enqueue_script('jquery-ui-slider');
                         wp_enqueue_script('spectrum.min.js', $jQueryPluginRoot . '/spectrum-picker/spectrum.min.js', array('jquery'), EZP_CS_Constants::PLUGIN_VERSION);
-                    } else {
+                    }
+                    else
+                    {
                         // Implies it is the content tab
                         wp_enqueue_script('jquery-ui-datepicker');
                     }
 
                     wp_enqueue_media();
-                } else if ($_GET['page'] == EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG) {
-
-
+                }
+                else if ($_GET['page'] == EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG)
+                {
                     wp_enqueue_script('jquery-ui-dialog');
                 }
             }
@@ -390,10 +447,11 @@ if (!class_exists('EZP_CS')) {
         /**
          *  enqueue_styles
          *  Loads the required css links only for this plugin  */
-        public function enqueue_styles() {
+        public function enqueue_styles()
+        {
             $styleRoot = plugins_url() . "/" . EZP_CS_Constants::PLUGIN_SLUG . "/styles";
 
-            wp_register_style('jquery-ui-min-css', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
+            wp_register_style('jquery-ui-min-css', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
             wp_enqueue_style('jquery-ui-min-css');
 
 
@@ -404,33 +462,44 @@ if (!class_exists('EZP_CS')) {
             $jQueryPluginRoot = plugins_url() . "/" . EZP_CS_Constants::PLUGIN_SLUG . "/jquery-plugins";
             //       wp_enqueue_style('jquery.eyecon.colorpicker.colorpicker', $jQueryPluginRoot . '/colorpicker/css/colorpicker.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
 
-            if (isset($_GET['page']) && ($_GET['page'] == EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG)) {
-                if (!isset($_GET['tab']) || ($_GET['tab'] == 'display')) {
+            if (isset($_GET['page']) && ($_GET['page'] == EZP_CS_Constants::$TEMPLATE_SUBMENU_SLUG))
+            {
+                if (!isset($_GET['tab']) || ($_GET['tab'] == 'display'))
+                {
                     wp_enqueue_style('spectrum.css', $jQueryPluginRoot . '/spectrum-picker/spectrum.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
                 }
+            }
+
+            if (isset($_GET['page']) && ($_GET['page'] == EZP_CS_Constants::$COMING_SOON_PAGE_ELITE_SUBMENU_SLUG))
+            {
+                wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '4.3.0');
             }
         }
 
         // <editor-fold defaultstate="collapsed" desc=" Action Handlers ">
-        public function plugins_loaded_handler() {
+        public function plugins_loaded_handler()
+        {
 
             $this->init_localization();
             $this->upgrade_processing();
         }
 
-        public function init_localization() {
+        public function init_localization()
+        {
 
             load_plugin_textdomain(EZP_CS_Constants::PLUGIN_SLUG, false, EZP_CS_Constants::PLUGIN_SLUG . '/languages/');
         }
 
-        public function admin_init_handler() {
+        public function admin_init_handler()
+        {
 
             //   register_setting(EZP_CS_Constants::MAIN_PAGE_KEY, EZP_CS_Constants::COMPOUND_OPTION_NAME, array($this, 'validate_options'));
             // $this->add_settings_sections();
             $this->add_filters_and_actions();
         }
 
-        private function add_filters_and_actions() {
+        private function add_filters_and_actions()
+        {
 
             add_filter('plugin_action_links', array($this, 'get_action_links'), 10, 2);
 
@@ -440,9 +509,11 @@ if (!class_exists('EZP_CS')) {
 //            $this->add_class_action('media_upload_epcs', 'add_custom_wallpaper_tab_content');
         }
 
-        function get_action_links($links, $file) {
+        function get_action_links($links, $file)
+        {
 
-            if ($file == "easy-pie-coming-soon/easy-pie-coming-soon.php") {
+            if ($file == "easy-pie-coming-soon/easy-pie-coming-soon.php")
+            {
 
                 $settings_link = '<a href="' . get_bloginfo('wpurl') . '/wp-admin/admin.php?page=' . EZP_CS_Constants::PLUGIN_SLUG . '">Settings</a>';
 
@@ -452,13 +523,15 @@ if (!class_exists('EZP_CS')) {
             return $links;
         }
 
-        function upgrade_processing() {
+        function upgrade_processing()
+        {
             // RSR TODO: In future versions compare where we are at with what's in the system and take action            
         }
 
         // </editor-fold>
-        
-        public function add_to_admin_menu() {
+
+        public function add_to_admin_menu()
+        {
 
             $perms = 'manage_options';
 
@@ -468,7 +541,7 @@ if (!class_exists('EZP_CS')) {
             $settings_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Settings'), $this->__('Settings'), $perms, EZP_CS_Constants::$SETTINGS_SUBMENU_SLUG, array($this, 'display_settings_options_page'));
             $subscribers_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Subscribers'), $this->__('Subscribers'), $perms, EZP_CS_Constants::$SUBSCRIBERS_SUBMENU_SLUG, array($this, 'display_subscribers_options_page'));
             $coming_soon_page_elite_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Coming Soon Page ELITE'), $this->__('Go Pro!'), $perms, EZP_CS_Constants::$COMING_SOON_PAGE_ELITE_SUBMENU_SLUG, array($this, 'display_coming_soon_page_elite_page'));
-        //    $preview_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Preview'), $this->__('Preview'), $perms, EZP_CS_Constants::$PREVIEW_SUBMENU_SLUG, array($this, 'display_preview_page'));
+            //    $preview_page_hook_suffix = add_submenu_page(EZP_CS_Constants::PLUGIN_SLUG, $this->__('Easy Pie Coming Soon Preview'), $this->__('Preview'), $perms, EZP_CS_Constants::$PREVIEW_SUBMENU_SLUG, array($this, 'display_preview_page'));
 
             add_action('admin_print_scripts-' . $template_page_hook_suffix, array($this, 'enqueue_scripts'));
             add_action('admin_print_scripts-' . $settings_page_hook_suffix, array($this, 'enqueue_scripts'));
@@ -478,11 +551,13 @@ if (!class_exists('EZP_CS')) {
             add_action('admin_print_styles-' . $template_page_hook_suffix, array($this, 'enqueue_styles'));
             add_action('admin_print_styles-' . $settings_page_hook_suffix, array($this, 'enqueue_styles'));
             add_action('admin_print_styles-' . $subscribers_page_hook_suffix, array($this, 'enqueue_styles'));
+            add_action('admin_print_styles-' . $coming_soon_page_elite_suffix, array($this, 'enqueue_styles'));            
         }
 
         // </editor-fold>
 
-        function display_options_page($page) {
+        function display_options_page($page)
+        {
 
             $relative_page_path = '/../pages/' . $page;
 
@@ -491,23 +566,28 @@ if (!class_exists('EZP_CS')) {
             include($__dir__ . $relative_page_path);
         }
 
-        function display_template_options_page() {
+        function display_template_options_page()
+        {
             $this->display_options_page('page-options.php');
         }
 
-        function display_settings_options_page() {
+        function display_settings_options_page()
+        {
             $this->display_options_page('page-options-settings.php');
         }
 
-        function display_subscribers_options_page() {
+        function display_subscribers_options_page()
+        {
             $this->display_options_page('page-subscribers.php');
         }
-        
-        function display_coming_soon_page_elite_page() {
+
+        function display_coming_soon_page_elite_page()
+        {
             $this->display_options_page('page-coming-soon-page-elite.php');
         }
 
-        function display_preview_page() {
+        function display_preview_page()
+        {
             $this->display_options_page('page-preview.php');
         }
 

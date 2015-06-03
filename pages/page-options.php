@@ -100,11 +100,7 @@ if (isset($_GET['tab'])) {
             |
             <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate'); ?></a>
             |            
-            <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
-            |
             <a href="http://easypiewp.com/about/" target="_blank"><?php EZP_CS_Utility::_e('Contact') ?></a>
-            |
-            <a href="http://easypiewp.com" target="_blank">Coming Soon Page ELITE</a>
         </form>
     </div>
 </div>

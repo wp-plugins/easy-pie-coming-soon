@@ -5,6 +5,10 @@
     Description:
         Purpose of the stylesheet follows.
 */
+#toplevel_page_easy-pie-coming-soon a[href*="elite"]
+{
+    color: orange!important;
+}
 
 #icon-easy-pie-coming-soon {
     background: transparent url( '../images/easy-pie-cs-logo32.png' ) no-repeat;

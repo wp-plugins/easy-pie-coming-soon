@@ -32,7 +32,8 @@
     <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
     <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Settings') ?></h2>
     <?php
-    if (isset($_GET['settings-updated'])) {
+    if (isset($_GET['settings-updated']))
+    {
         echo "<div class='updated'><p>" . EZP_CS_Utility::__('If you have a caching plugin, be sure to clear the cache!') . "</p></div>";
     }
     ?>
@@ -47,7 +48,8 @@
 
             $error_string = "";
 
-            if (isset($_POST['action']) && $_POST['action'] == 'save') {
+            if (isset($_POST['action']) && $_POST['action'] == 'save')
+            {
 
                 check_admin_referer('easy-pie-coming-soon-save-settings');
 
@@ -57,7 +59,8 @@
 
                 $error_string = $config->set_post_variables($_POST);
 
-                if ($error_string == "") {
+                if ($error_string == "")
+                {
 
                     $config->fix_url_fields();
 
@@ -76,9 +79,9 @@
                 <div id="message" class="error below-h2"><p><?php echo EZP_CS_Utility::__('Errors present:') . "<br/> $error_string" ?></p></div>
             <?php endif; ?>
 
-            <?php if ($action_updated) : ?>
+<?php if ($action_updated) : ?>
                 <div id="message" class="updated below-h2"><p><span><?php echo EZP_CS_Utility::__('Settings Saved.'); ?></span><strong style="margin-left:7px;"><?php echo '  ' . EZP_CS_Utility::__('If you have a caching plugin be sure to clear it.'); ?></strong></p></div>
-            <?php endif; ?>
+<?php endif; ?>
 
             <div class="postbox" style="margin-top:12px;" >
                 <div class="inside" >
@@ -86,7 +89,7 @@
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Status") ?>
+<?php echo EZP_CS_Utility::_e("Status") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -105,7 +108,7 @@
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Collect Email") ?>
+<?php echo EZP_CS_Utility::_e("Collect Email") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -116,7 +119,7 @@
                         </tr>   
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Collect Name") ?>
+<?php echo EZP_CS_Utility::_e("Collect Name") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -135,7 +138,7 @@
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Return Code") ?>
+<?php echo EZP_CS_Utility::_e("Return Code") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -153,7 +156,7 @@
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Facebook URL") ?>
+<?php echo EZP_CS_Utility::_e("Facebook URL") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -163,7 +166,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Google Plus URL") ?>
+<?php echo EZP_CS_Utility::_e("Google Plus URL") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -173,12 +176,17 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Twitter URL") ?>
+<?php echo EZP_CS_Utility::_e("Twitter URL") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
                                     <input class="long-input" name="twitter_url" type="text" value="<?php echo $config->twitter_url; ?>" />
                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left:0; padding-bottom:0;" colspan="2">
+                                <small>Get more social icons with <a href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
                             </td>
                         </tr>
                     </table>
@@ -191,7 +199,7 @@
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Author URL") ?>
+<?php echo EZP_CS_Utility::_e("Author URL") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -202,7 +210,7 @@
                         </tr>
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Meta Description") ?>
+<?php echo EZP_CS_Utility::_e("Meta Description") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -212,7 +220,7 @@
                         </tr>    
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Meta Keywords") ?>
+<?php echo EZP_CS_Utility::_e("Meta Keywords") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -223,7 +231,7 @@
                         </tr>                      
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Analytics Code") ?>
+<?php echo EZP_CS_Utility::_e("Analytics Code") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -238,11 +246,11 @@
 
             <div class="postbox" >
                 <div class="inside" >
-                    <h3><?php EZP_CS_Utility::_e("Filters") ?></h3>
+                    <h3><?php EZP_CS_Utility::_e("Access") ?></h3>
                     <table class="form-table"> 
                         <tr>
                             <th scope="row">
-                                <?php echo EZP_CS_Utility::_e("Unfiltered URLs") ?>
+<?php echo EZP_CS_Utility::_e("Unfiltered URLs") ?>
                             </th>
                             <td>
                                 <div class="compound-setting">                            
@@ -250,23 +258,24 @@
                                     <div><span class="description"><?php EZP_CS_Utility::_e('Each line should contain a relative URL you don\'t want the page shown on (e.g. for http://mysite.com/mypage enter /mypage)'); ?></span></div>
                                 </div>
                             </td>
-                        </tr>                           
+                        </tr>    
+                        <tr>
+                            <td style="padding-left:0; padding-bottom:0;" colspan="2">
+                                <small>Give site access by visitor or group with <a href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>    
 
-            <?php
-            submit_button();
-            ?>
+<?php
+submit_button();
+?>
             <a href="http://easypiewp.com/easy-pie-coming-soon-faq" target="_blank"><?php EZP_CS_Utility::_e('FAQ'); ?></a>
             |
             <a href="http://wordpress.org/support/view/plugin-reviews/easy-pie-coming-soon" target="_blank"><?php echo EZP_CS_Utility::__('Rate'); ?></a>
             |            
-            <a href="http://easypiewp.com/donate/" target="_blank"><?php EZP_CS_Utility::_e('Donate') ?></a>
-            |
             <a href="http://easypiewp.com/about/" target="_blank"><?php EZP_CS_Utility::_e('Contact') ?></a>
-            |
-            <a href="http://easypiewp.com" target="_blank">Coming Soon Page ELITE</a>
         </form>
     </div>
 </div>

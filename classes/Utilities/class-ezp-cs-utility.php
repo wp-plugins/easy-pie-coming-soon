@@ -318,8 +318,7 @@ if (!class_exists('EZP_CS_Utility')) {
             $contact_text = __('Contact');
                                                         
             echo "<a href='http://easypiewp.com/easy-pie-coming-soon-faq' target='_blank'>$faq_text</a> | ";
-            echo "<a href='http://easypiewp.com/about/' target='_blank'>$contact_text</a> | ";
-            echo "<a href='http://easypiewp.com/' target='_blank'>Coming Soon Page ELITE</a>";
+            echo "<a href='http://easypiewp.com/about/' target='_blank'>$contact_text</a>";
         }
     }
 

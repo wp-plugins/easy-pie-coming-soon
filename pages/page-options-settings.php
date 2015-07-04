@@ -186,7 +186,7 @@
                         </tr>
                         <tr>
                             <td style="padding-left:0; padding-bottom:0;" colspan="2">
-                                <small>Get more social icons with <a href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
+                                <small>Get more social icons with <a style="color:red" href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
                             </td>
                         </tr>
                     </table>
@@ -261,7 +261,7 @@
                         </tr>    
                         <tr>
                             <td style="padding-left:0; padding-bottom:0;" colspan="2">
-                                <small>Give site access by visitor or group with <a href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
+                                <small>Give site access by visitor or group with <a style="color:red" href="http://easypiewp.com" target="_blank">Coming Soon Page Elite</a></small>
                             </td>
                         </tr>
                     </table>

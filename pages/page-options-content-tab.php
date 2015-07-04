@@ -231,7 +231,7 @@ if ($error_string != "") :
                 </th>
                 <td>
                     <div class="compound-setting">                            
-                        <input style="width:90px;" id="ezp-countdown-due-date" class="long-input" name="countdown_due_date" type="text" value="<?php EZP_CS_Utility::_he($content->countdown_due_date); ?>" />
+                        <input style="width:130px;" id="ezp-countdown-due-date" class="long-input" name="countdown_due_date" type="text" value="<?php EZP_CS_Utility::_he($content->countdown_due_date); ?>" />
                         <div><span class="description"><?php EZP_CS_Utility::_e('Countdown timer will display when populated'); ?></span></div>
                     </div>
                 </td>

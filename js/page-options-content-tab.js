@@ -7,7 +7,8 @@ jQuery(document).ready(function($) {
     var logo_uploader;
 
 
-    $('#ezp-countdown-due-date').datepicker({ dateFormat: ezp_cs_datepicker_date_format} );
+    //$('#ezp-countdown-due-date').datepicker({ dateFormat: ezp_cs_datepicker_date_format } );
+    $('#ezp-countdown-due-date').datetimepicker({ dateFormat: ezp_cs_datepicker_date_format} );
     $('#easy-pie-cs-logo-button').click(function(e) {
 
         e.preventDefault();

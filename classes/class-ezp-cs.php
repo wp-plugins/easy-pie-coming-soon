@@ -432,7 +432,9 @@ if (!class_exists('EZP_CS'))
                     else
                     {
                         // Implies it is the content tab
-                        wp_enqueue_script('jquery-ui-datepicker');
+//                        wp_enqueue_script('jquery-ui-datepicker');
+                        wp_enqueue_script('jquery-ui-slider');
+                        wp_enqueue_script('jquery-ui-timepicker-addon.js', $jQueryPluginRoot . '/jquery-timepicker/jquery-ui-timepicker-addon.js', array('jquery-ui-datepicker', 'jquery-ui-slider'), EZP_CS_Constants::PLUGIN_VERSION);
                     }
 
                     wp_enqueue_media();
@@ -467,6 +469,10 @@ if (!class_exists('EZP_CS'))
                 if (!isset($_GET['tab']) || ($_GET['tab'] == 'display'))
                 {
                     wp_enqueue_style('spectrum.css', $jQueryPluginRoot . '/spectrum-picker/spectrum.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
+                }
+                else if (isset($_GET['tab']) && ($_GET['tab'] == 'content'))
+                {                
+                    wp_enqueue_style('jquery-ui-timepicker-addon.css', $jQueryPluginRoot . '/jquery-timepicker/jquery-ui-timepicker-addon.css', array(), EZP_CS_Constants::PLUGIN_VERSION);
                 }
             }
 
@@ -585,12 +591,5 @@ if (!class_exists('EZP_CS'))
         {
             $this->display_options_page('page-coming-soon-page-elite.php');
         }
-
-        function display_preview_page()
-        {
-            $this->display_options_page('page-preview.php');
-        }
-
     }
-
 }

@@ -36,6 +36,15 @@ Let your visitors know your site is Coming Soon while gathering their contact in
 ### Advanced Features
 * Export email addresses gathered by Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
 
+### Need More? Go Elite!
+Take things to the next level with [Coming Soon Page Elite](https://easypiewp.com) where you get everything and the following great features:
+
+* Auto-sync your subscriber list to MailChimp. No need to export and import!
+* Grant site access by person or group with Advanced Access Control.
+* Extra social icons, including Instagram, LinkedIn, YouTube and more.
+* Bonus backgrounds!
+* More features being added all the time!
+
 ### Overview
 Coming Soon Page is a great way to let visitors know your site is Coming Soon.  When Coming Soon Page is displayed it collects valuable emails from potential customers in a friendly and professional way.  Coming Soon Page is also theme independent, having been confirmed to work well with top WordPress themes. 
 
@@ -78,6 +87,10 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 5. Subscriber list
 
 == Changelog ==
+
+= 1.0.0 =
+* Countdown timer now supports time in addition to date
+* UI tweaks
 
 = 0.6.4 =
 * Small UI tweaks
@@ -123,29 +136,33 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Upgrade Notice ==
 
+= 1.0.0 =
+* Countdown timer now supports time in addition to date
+* UI tweaks
+
 = 0.6.4 =
-Small UI tweaks
+* Small UI tweaks
 
 = 0.6.3 =
-Fixed bug involving name being a required field (Thanks tomtc)
+* Fixed bug involving name being a required field (Thanks tomtc)
 
 = 0.6.2 =
-Fixed typo introduced in 0.6.1 causing fatal error on subscriber list screen. (Thanks Paris Le-Tayo for reporting!)
+* Fixed typo introduced in 0.6.1 causing fatal error on subscriber list screen. (Thanks Paris Le-Tayo for reporting!)
 
 = 0.6.1 =
-Fixed small formatting problem
+* Fixed small formatting problem
 
 = 0.6.0 =
-Small tweaks
+* Small tweaks
 
 = 0.5.8 =
-Small tweaks, upped WordPress compatibility to 3.9.2
+* Small tweaks, upped WordPress compatibility to 3.9.2
 
 = 0.5.6 =
-Includes minor bug fixes and usability improvements. Note that Coming Soon Page preview has been moved to the third template tab. 
+* Includes minor bug fixes and usability improvements. Note that Coming Soon Page preview has been moved to the third template tab. 
  
 = 0.5.4 =
-Added countdown timer. Also added ability to disable Coming Soon Page for specific site URLs. Additionally, made a few minor tweaks.
+* Added countdown timer. Also added ability to disable Coming Soon Page for specific site URLs. Additionally, made a few minor tweaks.
 
 = 0.5.2 =
 * Now you can change the title of your coming soon page. Also includes several usability improvements.

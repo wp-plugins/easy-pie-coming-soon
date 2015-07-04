@@ -74,7 +74,8 @@
                     <li>Preview from Admin panel</li>
                     <li>Choose 503 or 200 HTTP status</li>
                     <li>Selectively allow viewing certain URLs</li>
-                    <li class="elite">Give site access via special URLs. Allows cutting off one group while giving another access.</li>
+                    <li class="elite">Sends you an email when someone subscribes</li>
+                    <li class="elite">Advanced Access System: Give individuals or groups independent site access.</li>
                 </ul>
             </td>
         </tr>

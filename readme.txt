@@ -42,6 +42,7 @@ Take things to the next level with [Coming Soon Page Elite](https://easypiewp.co
 * Auto-sync your subscriber list to MailChimp. No need to export and import!
 * Grant site access by person or group with Advanced Access Control.
 * Extra social icons, including Instagram, LinkedIn, YouTube and more.
+* Receive emails when subscribers sign up.
 * Bonus backgrounds!
 * More features being added all the time!
 

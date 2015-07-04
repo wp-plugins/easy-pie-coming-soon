@@ -78,7 +78,7 @@ $config = EZP_CS_Config_Entity::get_by_id($global->config_index);
                 </div>
             </div>
             <p style="margin-left:8px;margin-top:10px;font-style:italic; clear:both">
-                *Some of the above are 'affiliate links'. These do not affect the price of paid options.
+            <small style="margin-top:17px; ">AutoSync your subscribers to MailChimp with <a style="color:red" target="_blank" href="http://easypiewp.com">Coming Soon Page Elite</a></small>
             </p>
         </div>
     </div>

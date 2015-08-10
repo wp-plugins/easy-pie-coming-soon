@@ -89,6 +89,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed cross site scripting vulnerability
+
 = 1.0.0 =
 * Countdown timer now supports time in addition to date
 * UI tweaks
@@ -136,6 +139,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+* Fixed cross site scripting vulnerability
 
 = 1.0.0 =
 * Countdown timer now supports time in addition to date

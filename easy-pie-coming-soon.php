@@ -3,7 +3,7 @@
   Plugin Name: Coming Soon Page
   Plugin URI: http://easypiewp.com/easy-pie-coming-soon-faq/
   Description: Let people know that your site is 'coming soon'. Visitors can submit their email addresses for future notification.
-  Version: 1.0.0
+  Version: 1.0.1
   Author: Bob Riley
   Author URI: http://www.easypiewp.com
   Text Domain: easy-pie-coming-soon

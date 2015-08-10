@@ -21,9 +21,15 @@
  */
 ?>
 <?php
+
 if (isset($_GET['tab'])) {
 
     $active_tab = $_GET['tab'];
+
+    if((trim($active_tab) != '') && ($active_tab != 'display') && ($active_tab != 'content') && ($active_tab != 'preview')) {
+        echo 'Invalid request';
+        die();
+    }
 } else {
 
     $active_tab = 'display';

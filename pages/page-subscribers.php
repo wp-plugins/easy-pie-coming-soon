@@ -24,6 +24,12 @@
 if (isset($_GET['tab'])) {
 
     $active_tab = $_GET['tab'];
+    
+    if(($active_tab != '') && ($active_tab != 'list') && ($active_tab != 'newsletter'))
+    {
+        echo 'Invalid request';
+        die();
+    }
 } else {
 
     $active_tab = 'list';

@@ -47,7 +47,7 @@ if (isset($_GET['tab'])) {
 <div class="wrap">
 
     <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
-    <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Subscriber Management'); ?></h2>
+    <h2>EZP Coming Soon: <?php EZP_CS_Utility::_e('Subscriber Management'); ?></h2>
     <?php
     
     $global = EZP_CS_Global_Entity::get_instance();

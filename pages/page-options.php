@@ -47,7 +47,7 @@ if (isset($_GET['tab'])) {
 <div class="wrap">
 
     <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
-    <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Template'); ?></h2>
+    <h2>EZP Coming Soon: <?php EZP_CS_Utility::_e('Template'); ?></h2>
     <?php
     if (isset($_GET['settings-updated'])) {
         echo "<div class='updated'><p>" . EZP_CS_Utility::__('If you have a caching plugin, be sure to clear the cache!') . "</p></div>";

@@ -30,7 +30,7 @@
 <div class="wrap">
 
     <?php screen_icon(EZP_CS_Constants::PLUGIN_SLUG); ?>
-    <h2>Easy Pie Coming Soon: <?php EZP_CS_Utility::_e('Settings') ?></h2>
+    <h2>EZP Coming Soon: <?php EZP_CS_Utility::_e('Settings') ?></h2>
     <?php
     if (isset($_GET['settings-updated']))
     {

@@ -1,4 +1,4 @@
-=== Coming Soon Page ===
+=== EZP Coming Soon Page ===
 Contributors: bobriley
 Donate link: http://easypiewp.com/donate/
 Tags: coming soon, coming soon page, construction, landing page, launch, launch page, maintenance, maintenance mode, offline, unavailable, under construction, underconstruction, wordpress coming soon, wordpress maintenance mode, wordpress under construction
@@ -8,7 +8,7 @@ Stable tag: 1.0.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collects emails for you!
+EZP Coming Soon Page lets visitors know that your website is 'Coming Soon' while it collects emails for you!
 
 == Description ==
 
@@ -34,7 +34,7 @@ Let your visitors know your site is Coming Soon while gathering their contact in
 * Selectively disable Coming Soon Page on certain URLs
 
 ### Advanced Features
-* Export email addresses gathered by Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
+* Export email addresses gathered by EZP Coming Soon Page to CSV for compatibility with **MailChimp**, **AWeber** and other major email providers.
 
 ### Need More? Go Elite!
 Take things to the next level with [Coming Soon Page Elite](https://easypiewp.com) where you get everything and the following great features:
@@ -47,7 +47,7 @@ Take things to the next level with [Coming Soon Page Elite](https://easypiewp.co
 * More features being added all the time!
 
 ### Overview
-Coming Soon Page is a great way to let visitors know your site is Coming Soon.  When Coming Soon Page is displayed it collects valuable emails from potential customers in a friendly and professional way.  Coming Soon Page is also theme independent, having been confirmed to work well with top WordPress themes. 
+EZP Coming Soon Page is a great way to let visitors know your site is Coming Soon.  When Coming Soon Page is displayed it collects valuable emails from potential customers in a friendly and professional way.  EZP Coming Soon Page is also theme independent, having been confirmed to work well with top WordPress themes. 
 
 Finally, your visitors won't be just shown your web host's parked domain page, instead they'll know your site is truly 'Coming Soon'!
 
@@ -56,7 +56,7 @@ Finally, your visitors won't be just shown your web host's parked domain page, i
 = Using The WordPress Dashboard =
 
 1. Navigate to the 'Add New' in the plugins dashboard
-2. Search for 'Coming Soon Page'
+2. Search for 'EZP Coming Soon Page'
 3. Click 'Install Now'
 4. Activate the plugin on the Plugin dashboard
 
@@ -77,7 +77,7 @@ Finally, your visitors won't be just shown your web host's parked domain page, i
 
 == Frequently Asked Questions ==
 
-For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
+For the FAQ on EZP Coming Soon Page please visit the [Easy Pie Website](http://easypiewp.com/easy-pie-coming-soon-faq/).
 
 == Screenshots ==
 
@@ -88,6 +88,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 5. Subscriber list
 
 == Changelog ==
+
+= 1.0.2 =
+* Changed name to EZP Coming Soon Page to avoid confusion with other plugins
 
 = 1.0.1 =
 * Fixed cross site scripting vulnerability
@@ -139,6 +142,9 @@ For the FAQ on the Coming Soon Page please visit the [Easy Pie Website](http://e
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+* Changed name to EZP Coming Soon Page to avoid confusion with other plugins
 
 = 1.0.1 =
 * Fixed cross site scripting vulnerability
